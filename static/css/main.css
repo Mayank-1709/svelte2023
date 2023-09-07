@@ -13,7 +13,7 @@
     align-items: end;
 }
 
-.football-animation > i{
+.football-animation{
     animation: 10s infinite positionChange;
 }
 
