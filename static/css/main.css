@@ -6,8 +6,13 @@
     width:100%;
 }
 
+.sub-main-header > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+}
 .football-animation{
-    width:70%;
     height: 180px;
     display: flex;
     align-items: end;
@@ -19,10 +24,10 @@
 
 @keyframes positionChange {
     0% { margin-left: initial; }
-    20% { margin-left: 6rem; } 
-    40% { margin-left: 12rem; } 
-    60% { margin-left: 18rem; }
-    80% { margin-left: 24rem; }
+    20% { margin-left: 5rem; } 
+    40% { margin-left: 10rem; } 
+    60% { margin-left: 15rem; }
+    80% { margin-left: 23rem; }
     100% { margin-left: initial; }
 }
 

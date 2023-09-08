@@ -8,8 +8,10 @@
             <div>Ronaldo</div>
             <div>Realm</div>
         </div>
-        <div class="football-animation">
+        <div>
+            <div class="football-animation">
             <i class="fa-solid fa-futbol style-icon fa-spin" style="font-size:7em" ></i>
+            </div>
         </div>
         <div class="logo"></div>
         <div class="nav-container"><Nav /></div>
