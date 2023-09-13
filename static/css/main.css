@@ -129,6 +129,7 @@
     padding: 20px;
     background-color: bisque;
     box-sizing: border-box;
+    border: 2px solid black;
 }
 .hero-video{
     max-width: 100%;
@@ -316,3 +317,53 @@
     color: black;
 }
 
+.photo-container-career-highlights{
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo-container-career-highlights > div{
+    border: 2px solid black;
+    margin: 20px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+    position: relative;
+}
+
+.photo-container-career-highlights > div p{
+    position: absolute;
+    
+}
+
+.photo1{
+    background-image: url('../images/sporting_FC.jpg');
+}
+
+.photo2{
+    background-image: url('../images/Manchester_FC.jpg');
+}
+
+.photo3{
+    background-image: url('../images/Realmadrid_FC.jpg');
+}
+
+.photo4{
+    background-image: url('../images/Juventus_FC.jpg');
+}
+
+.photo5{
+    background-image: url('../images/Al-Nassr_FC.jpg');
+}
+
+.photo6{
+    background-image: url('../images/Portugal.jpg');
+}
