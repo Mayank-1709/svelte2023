@@ -216,7 +216,8 @@
 
 .block:nth-child(4) p,
 .block:nth-child(5) p,
-.block:nth-child(6) p {
+.block:nth-child(6) p,
+.description p{
     text-align: center; 
     margin: 0; 
     font-family: cursive;
@@ -350,6 +351,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    margin: 20px;
 }
 
 .headings > h2{
@@ -361,7 +363,7 @@
 }
 
 .photo-container-career-highlights > div:not(.headings):hover{
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .photo-container-career-highlights > div p{
@@ -407,5 +409,113 @@
 
 .photo6{
     background-image: url('../images/Portugal.jpg');
+}
+
+.photo-container-personal-life{
+    margin-top: 40px;
+    border: 2px solid black;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    gap: 20px;
+    margin: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.personal-life-photo{
+    border: 2px solid black;
+    height: 600px;
+    margin: 10px;
+}
+
+.description{
+    border: 2px solid black;
+    margin: 10px;
+    position: relative;
+}
+
+.description p{
+    position: absolute;
+    margin-top: 120px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    font-size: 2.4rem;
+}
+
+.description p:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.personal-life-photo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.photo_1{
+    background-image: url("../images/cr7_dad.jpg");
+}
+
+.photo_2{
+    background-image: url("../images/cr7_mom.jpg");
+}
+
+.photo_3{
+    background-image: url("../images/cr7_wife.jpg");
+}
+
+.photo_4{
+    background-image: url("../images/cr7_kids.jpg");
+}
+
+.photo_5{
+    background-image: url("../images/cr7_fitness.jpg");
+}
+
+.video-container{
+    margin-top: 40px;
+    border: 2px solid black;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid black;
+    gap: 20px;
+    margin: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.video-goals{
+    border: 2px solid black;
+    height: 300px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.video-goals video{
+    width: 100%;
+    height: auto;
 }
 
