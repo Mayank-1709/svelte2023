@@ -1,5 +1,8 @@
 <div class="main-page-content"> 
    <div class="photo-container-career-highlights">
+        <div class="headings">
+            <h2>CAREER HIGHLIGHTS</h2>
+        </div>
         <div class="photo1">
             <p>Ronaldo's football journey started at Sporting Lisbon.</p>
         </div>
