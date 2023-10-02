@@ -79,7 +79,10 @@
             </div>
             <div class="video-goals"></div>
             <div class="video-goals">
-                
+                <video autoplay muted loop> 
+                    <source src="../videos/Video_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="video-goals"></div>
             <div class="video-goals"></div>
