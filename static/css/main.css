@@ -129,7 +129,6 @@
     padding: 20px;
     background-color: bisque;
     box-sizing: border-box;
-    border: 2px solid black;
 }
 .hero-video{
     max-width: 100%;
@@ -324,13 +323,11 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
     align-items: center;
     justify-content: center;
 }
 
 .photo-container-career-highlights > div:not(.headings){
-    border: 2px solid black;
     margin: 20px;
     height: 600px;
     background-size:cover;
@@ -344,7 +341,6 @@
 
 .headings{
     width: 100%;
-    border: 2px solid black;
     height:100px;
     display: flex;
     justify-content: center;
@@ -412,7 +408,6 @@
 
 .photo-container-personal-life{
     margin-top: 40px;
-    border: 2px solid black;
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -423,7 +418,6 @@
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid black;
     gap: 20px;
     margin: 20px;
     height: auto;
@@ -431,13 +425,11 @@
 }
 
 .personal-life-photo{
-    border: 2px solid black;
     height: 600px;
     margin: 10px;
 }
 
 .description{
-    border: 2px solid black;
     margin: 10px;
     position: relative;
 }
@@ -486,7 +478,6 @@
 
 .video-container{
     margin-top: 40px;
-    border: 2px solid black;
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -497,7 +488,6 @@
 .video-gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 2px solid black;
     gap: 20px;
     margin: 20px;
     height: auto;
@@ -505,7 +495,6 @@
 }
 
 .video-goals{
-    border: 2px solid black;
     height: 300px;
     max-width: 100%;
     overflow: hidden;
