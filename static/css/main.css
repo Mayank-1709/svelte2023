@@ -188,9 +188,7 @@
     margin-top: 20px;
 }
 
-.block:nth-child(1),
-.block:nth-child(2),
-.block:nth-child(3){
+.block:nth-child(-n+3){
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,9 +207,7 @@
     background-image: var(--image-url-ballondor);
 }
 
-.block:nth-child(4),
-.block:nth-child(5),
-.block:nth-child(6){
+.block:nth-child(n+4){
     height: 300px;
     border-radius: 200px;
     display: flex;
@@ -232,9 +228,7 @@
     
 }
 
-.block:nth-child(4) p,
-.block:nth-child(5) p,
-.block:nth-child(6) p,
+.block:nth-child(n+4) p,
 .description p{
     text-align: center; 
     margin: 0; 
