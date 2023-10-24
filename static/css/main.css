@@ -96,6 +96,7 @@
     margin: 0; 
     animation: 10s infinite colourChange;
     background-color: var(--main-site-color);
+    border: 2px solid black;
 }
 
 @keyframes colourChange {
@@ -106,6 +107,14 @@
     66.67% { background-color: #9370DB; }
     83.33% { background-color: #32CD32; } 
     100% { background-color: var(--main-site-color); }
+}
+
+#fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .sub-main-header{
@@ -149,6 +158,8 @@
     padding: 20px;
     background-color: var(--main-site-color);
     box-sizing: border-box;
+    border: 2px solid black;
+    margin-top: 200px;
 }
 .hero-video{
     max-width: 100%;
@@ -520,4 +531,3 @@
     width: 100%;
     height: auto;
 }
-

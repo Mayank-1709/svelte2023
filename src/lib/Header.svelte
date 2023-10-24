@@ -1,7 +1,7 @@
 <script>
     import Nav from '$lib/Nav.svelte' 
 </script>
-<header class="main-header">
+<header class="main-header" id="fixed-header">
     <div class=sub-main-header>
         <div class="site-title-container">
             <div>The</div>
