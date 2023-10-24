@@ -1,5 +1,9 @@
 :root {
     --main-site-color: bisque; 
+    --font-family-cursive: cursive;
+    --font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --font-size-small: 2rem;
+    --font-size-large: 5rem;
 }
 
 .nav-container{
@@ -44,8 +48,8 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    font-family: cursive;
-    font-size: 2rem;
+    font-family: var(--font-family-cursive);
+    font-size: var(--font-size-small);
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     width:40%;  
     transition: color 1s ease-in-out;
@@ -114,8 +118,8 @@
 
 .nav-menu li a {
     text-decoration: none;
-    font-family: cursive;
-    font-size: 2rem;
+    font-family: var(--font-family-cursive);
+    font-size: var(--font-size-small);
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     color: black;
     transition: color 1s ease;
@@ -154,7 +158,7 @@
     top: 40%;
     text-align: center;
     padding: 10px 20px;
-    font-family: cursive;
+    font-family: var(--font-family-cursive);
     font-size: 75px;
     color: white;
     box-sizing: border-box;
@@ -218,7 +222,7 @@
 .description p{
     text-align: center; 
     margin: 0; 
-    font-family: cursive;
+    font-family: var(--font-family-cursive);
     font-size: 2.8rem;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
 }
@@ -236,8 +240,8 @@
 
 .number-container > h2{
     width: 100%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5rem;
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-large);
     margin: 0;
     font-weight: 20;
     color: rgb(103, 67, 18);
@@ -265,7 +269,7 @@
 }
 
 .stats h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--font-family-serif);
     font-size: 7rem;
     margin: 0;
     font-weight: 20;
@@ -273,7 +277,7 @@
 }
 
 .stats h4{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--font-family-serif);
     font-size: 1.5rem;
     margin: 0;
     font-weight: 20;
@@ -311,7 +315,7 @@
 }
 
 .copyright h4{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--font-family-serif);
     font-size: 20px;
     color: black;
 }
@@ -350,8 +354,8 @@
 }
 
 .headings > h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5rem;
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-large);
     margin: 0;
     font-weight: 20;
     color: rgb(103, 67, 18);
@@ -367,7 +371,7 @@
     left: 0;
     right: 0;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-family-serif);
     font-size: 1.1rem;
     font-style:italic;
     font-weight: 800;
