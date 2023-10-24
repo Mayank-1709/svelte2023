@@ -1,5 +1,5 @@
 :root {
-    --main: 
+    --main-site-color: bisque; 
 }
 
 .nav-container{
@@ -75,17 +75,17 @@
     padding: 10px;
     margin: 0; 
     animation: 10s infinite colourChange;
-    background-color: bisque;
+    background-color: var(--main-site-color);
 }
 
 @keyframes colourChange {
-    0% { background-color: bisque; }
+    0% { background-color: var(--main-site-color); }
     16.67% { background-color: #FF6B6B; } 
     33.33% { background-color: #00CED1; } 
     50% { background-color: #FFD700; } 
     66.67% { background-color: #9370DB; }
     83.33% { background-color: #32CD32; } 
-    100% { background-color: bisque; }
+    100% { background-color: var(--main-site-color); }
 }
 
 .sub-main-header{
@@ -94,7 +94,7 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    background-color: bisque;
+    background-color: var(--main-site-color);
 }
 
 .nav-header{
@@ -127,7 +127,7 @@
 
 .main-page-content{
     padding: 20px;
-    background-color: bisque;
+    background-color: var(--main-site-color);
     box-sizing: border-box;
 }
 .hero-video{
@@ -283,7 +283,7 @@
     
 .footer-container{
     padding: 20px;
-    background-color: bisque;
+    background-color: var(--main-site-color);
     gap: 20px;
 }
 
@@ -296,7 +296,7 @@
 
 .footer-elements{
     display: flex;
-    background-color: bisque;
+    background-color: var(--main-site-color);
     align-items: center;
     justify-content:space-between;
     margin-top: 20px;
