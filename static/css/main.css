@@ -4,6 +4,22 @@
     --font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     --font-size-small: 2rem;
     --font-size-large: 5rem;
+    --text-shadow-effect:  4px 4px 4px rgba(0, 0, 0, 0.8);
+    --image-url-logo: url('../images/logo.jpg');
+    --image-url-realmadrid: url('../images/realmadrid.jpg');
+    --image-url-euro2016: url('../images/euro2016.jpg');
+    --image-url-ballondor: url('../images/ballond\'or.jpg');
+    --image-url-sporting: url('../images/sporting_FC.jpg');
+    --image-url-manchester: url('../images/Manchester_FC.jpg');
+    --image-url-realmadrid-fc: url('../images/Realmadrid_FC.jpg');
+    --image-url-juventus-fc: url('../images/Juventus_FC.jpg');
+    --image-url-alnassr-fc: url('../images/Al-Nassr_FC.jpg');
+    --image-url-portugal: url('../images/Portugal.jpg');
+    --image-url-cr7-dad: url('../images/cr7_dad.jpg');
+    --image-url-cr7-mom: url('../images/cr7_mom.jpg');
+    --image-url-cr7-wife: url('../images/cr7_wife.jpg');
+    --image-url-cr7-kids: url('../images/cr7_kids.jpg');
+    --image-url-cr7-fitness: url('../images/cr7_fitness.jpg');
 }
 
 .nav-container{
@@ -37,7 +53,7 @@
 
 .logo{
     height:180px;
-    background-image:url('../images/logo.jpg');
+    background-image: var(--image-url-logo);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +66,7 @@
     white-space: nowrap;
     font-family: var(--font-family-cursive);
     font-size: var(--font-size-small);
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: var(--text-shadow-effect);
     width:40%;  
     transition: color 1s ease-in-out;
 }
@@ -120,7 +136,7 @@
     text-decoration: none;
     font-family: var(--font-family-cursive);
     font-size: var(--font-size-small);
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: var(--text-shadow-effect);
     color: black;
     transition: color 1s ease;
   }
@@ -182,15 +198,15 @@
 }
 
 .block1{
-    background-image: url('../images/realmadrid.jpg');  
+    background-image: var(--image-url-realmadrid);  
 }
 
 .block2{
-    background-image: url('../images/euro2016.jpg');  
+    background-image: var(--image-url-euro2016);
 }
 
 .block3{
-    background-image: url('../images/ballond\'or.jpg'); 
+    background-image: var(--image-url-ballondor);
 }
 
 .block:nth-child(4),
@@ -224,7 +240,7 @@
     margin: 0; 
     font-family: var(--font-family-cursive);
     font-size: 2.8rem;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: var(--text-shadow-effect);
 }
 
 .number-container{
@@ -387,27 +403,27 @@
 }
 
 .photo1{
-    background-image: url('../images/sporting_FC.jpg');
+    background-image: var(--image-url-sporting);
 }
 
 .photo2{
-    background-image: url('../images/Manchester_FC.jpg');
+    background-image: var(--image-url-manchester);
 }
 
 .photo3{
-    background-image: url('../images/Realmadrid_FC.jpg');
+    background-image: var(--image-url-realmadrid-fc);
 }
 
 .photo4{
-    background-image: url('../images/Juventus_FC.jpg');
+    background-image: var(--image-url-juventus-fc);
 }
 
 .photo5{
-    background-image: url('../images/Al-Nassr_FC.jpg');
+    background-image: var(--image-url-alnassr-fc);
 }
 
 .photo6{
-    background-image: url('../images/Portugal.jpg');
+    background-image: var(--image-url-portugal);
 }
 
 .photo-container-personal-life{
@@ -461,23 +477,23 @@
 }
 
 .photo_1{
-    background-image: url("../images/cr7_dad.jpg");
+    background-image: var(--image-url-cr7-dad);
 }
 
 .photo_2{
-    background-image: url("../images/cr7_mom.jpg");
+    background-image: var(--image-url-cr7-mom);
 }
 
 .photo_3{
-    background-image: url("../images/cr7_wife.jpg");
+    background-image: var(--image-url-cr7-wife);
 }
 
 .photo_4{
-    background-image: url("../images/cr7_kids.jpg");
+    background-image: var(--image-url-cr7-kids);
 }
 
 .photo_5{
-    background-image: url("../images/cr7_fitness.jpg");
+    background-image: var(--image-url-cr7-fitness);
 }
 
 .video-container{
