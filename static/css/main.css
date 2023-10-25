@@ -28,7 +28,6 @@ body{
 .nav-container{
     width:100%;
     border: 2px solid black;
-    padding: 20px;
 }
 
 .sub-main-header > div:nth-child(2){
@@ -173,6 +172,12 @@ body{
     .football-animation {
       animation: none; 
     }
+
+    .hero-video h2 {
+        font-size: 2.5rem !important;
+        top: 50% !important;
+        transform: translate(0, -50%); 
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -185,17 +190,12 @@ body{
     }
   }
 
-  @media screen and (max-width: 900px) {
-    .site-title-container {
-      display: none; 
-    }
-
-    .nav-container{
-        justify-content: space-evenly;
+  @media screen and (max-width: 924px) {
+    .hero-video h2 {
+        display: none;
     }
 
   }
-  
 
 .main-page-content{
     padding: 20px;
