@@ -92,11 +92,9 @@
 
 .main-header{
     display: flex;
-    padding: 10px;
-    margin: 0; 
+    padding: 10px; 
     animation: 10s infinite colourChange;
     background-color: var(--main-site-color);
-    border: 2px solid black;
 }
 
 @keyframes colourChange {
@@ -114,7 +112,10 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .sub-main-header{
@@ -131,6 +132,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .nav-menu{
@@ -139,6 +141,7 @@
     gap: 150px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nav-menu li a {
@@ -158,8 +161,9 @@
     padding: 20px;
     background-color: var(--main-site-color);
     box-sizing: border-box;
-    border: 2px solid black;
-    margin-top: 200px;
+    width: 100%;
+    padding-top: 250px;
+    margin: 0;
 }
 .hero-video{
     max-width: 100%;

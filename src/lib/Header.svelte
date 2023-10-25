@@ -5,7 +5,7 @@
     <div class=sub-main-header>
         <div class="site-title-container">
             <div>The</div>
-            <div>Ronaldo</div>
+            <div>Ronaldo</div> 
             <div>Realm</div>
         </div>
         <div>
