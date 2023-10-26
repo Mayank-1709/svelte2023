@@ -225,6 +225,22 @@ body{
         width: calc(50% - 40px); 
         flex: initial !important;
     }
+
+    .video-gallery{
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 20px !important;
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .video-goals{
+        height: 400px !important;
+    }
+
+    .video-goals:nth-of-type(even){
+        display: none;
+    }
   }
 
 .main-page-content{
