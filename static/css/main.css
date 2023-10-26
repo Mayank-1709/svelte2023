@@ -200,6 +200,11 @@ body{
     .stats h2{
         font-size: 5rem !important;
     }
+
+    .photo-container-career-highlights > div:not(.headings) {
+        width: calc(33.33% - 40px); 
+        flex: initial !important;
+      }
   }
 
   @media screen and (max-width: 924px) {
