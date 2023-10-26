@@ -212,7 +212,7 @@ body{
    
     .description p{
         font-size: 1.5rem !important;
-        margin-top: 50px !important;
+        margin-top: 40px !important;
     }
   }
 
@@ -221,6 +221,10 @@ body{
         display: none;
     }
 
+    .photo-container-career-highlights > div:not(.headings) {
+        width: calc(50% - 40px); 
+        flex: initial !important;
+    }
   }
 
 .main-page-content{
