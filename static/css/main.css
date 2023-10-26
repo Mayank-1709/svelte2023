@@ -204,7 +204,16 @@ body{
     .photo-container-career-highlights > div:not(.headings) {
         width: calc(33.33% - 40px); 
         flex: initial !important;
-      }
+    }
+
+    .personal-life-photo, .description{
+        height: 300px !important;
+    }
+   
+    .description p{
+        font-size: 1.5rem !important;
+        margin-top: 50px !important;
+    }
   }
 
   @media screen and (max-width: 924px) {
@@ -510,11 +519,6 @@ body{
     width: 100%;
 }
 
-.personal-life-photo{
-    height: 600px;
-    margin: 10px;
-}
-
 .description{
     margin: 10px;
     position: relative;
@@ -540,6 +544,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    height: 600px;
+    margin: 10px;
 }
 
 .photo_1{
