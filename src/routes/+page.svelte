@@ -28,51 +28,33 @@
 
     <div class="grid-container">
         {#each [1, 2, 3] as i}
-            <div class = "block block{i}"></div>
+            <div class="block block{i}"></div>
         {/each}
         
         {#each blockData as data, index (index)}
-            <div class = "block block${index+4}">
+            <div class="block block${index+4}">
                 <p>{data}</p>
             </div>
         {/each}
     </div>
 
     <div class="number-container">
+        <h2>NUMEROS</h2> 
         {#each statsData as item}
             {#if item.number !== undefined}
-                <div class = "stats">
+                <div class="stats">
                     <h2> {item.number} </h2>
                     <h4> {item.label} </h4>
                 </div>
             {:else}
-            <div class =" stats"></div>
+            <div class="stats"></div>
             {/if}
-              
-        <!-- <h2>NUMEROS</h2>
-        <div class="stats">
-            <h2>850</h2>
-            <h4>GOALS</h4>
-        </div>
-        <div class="stats"></div>
-        <div class="stats">
-            <h2>1204</h2>
-            <h4>MATCHES</h4>
-        </div>
-        <div class="stats"></div>
-        <div class="stats">
-            <h2>86</h2>
-            <h4>TOTAL AWARDS</h4>
-        </div>
-        <div class="stats">
-            <i class="fa-solid fa-futbol style-icon"></i>
-        </div>
-        <div class="stats">
-            <i class="fa-solid fa-trophy style-icon"></i> 
-        </div>
-        <div class="stats">
-            <i class="fa-solid fa-award style-icon"></i>
-        </div> -->
+            {#if item.icon !== undefined}
+            <div class="stats">
+                <i class="{item.icon}"></i>
+            </div>
+        {/if}
+    {/each}  
     </div>
 </div>
 
