@@ -25,6 +25,7 @@
         </video>
         <h2>Magnificient Ronaldo</h2>
     </div>
+
     <div class="grid-container">
         {#each [1, 2, 3] as i}
             <div class = "block block{i}"></div>
@@ -36,8 +37,18 @@
             </div>
         {/each}
     </div>
+
     <div class="number-container">
-        
+        {#each statsData as item}
+            {#if item.number !== undefined}
+                <div class = "stats">
+                    <h2> {item.number} </h2>
+                    <h4> {item.label} </h4>
+                </div>
+            {:else}
+            <div class =" stats"></div>
+            {/if}
+              
         <!-- <h2>NUMEROS</h2>
         <div class="stats">
             <h2>850</h2>
