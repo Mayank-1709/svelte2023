@@ -347,7 +347,6 @@ body{
     gap: 20px;
     text-align: center;
     justify-content: center;
-    border: 2px solid black;
 }
 
 .number-container > h2{
@@ -357,7 +356,6 @@ body{
     margin: 0;
     font-weight: 20;
     color: rgb(103, 67, 18);
-    border: 2px solid black;
 }
 
 .stats{
@@ -368,7 +366,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid black;
 }
 
 .stats:nth-of-type(2),
@@ -380,7 +377,6 @@ body{
 .style-icon{
     color:#4b4a4a;
     font-size: 10em;
-    border: 2px solid black;
 }
 
 .stats h2{

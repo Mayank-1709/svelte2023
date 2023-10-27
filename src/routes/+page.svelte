@@ -10,10 +10,13 @@
         { number: "", label: "" }, 
         { number: "1204", label: "MATCHES" },
         { number: "", label: "" },
-        { number: "86", label: "TOTAL AWARDS" },
-        { icon: "fa-solid fa-futbol style-icon" },
-        { icon: "fa-solid fa-trophy style-icon" },
-        { icon: "fa-solid fa-award style-icon" }
+        { number: "86", label: "TOTAL AWARDS" }
+    ];
+
+    const iconData = [
+         "fa-solid fa-futbol style-icon",
+         "fa-solid fa-trophy style-icon",
+         "fa-solid fa-award style-icon"
     ];
 </script>
 
@@ -49,12 +52,12 @@
             {:else}
             <div class="stats"></div>
             {/if}
-            {#if item.icon !== undefined}
+        {/each}  
+        {#each iconData as item}
             <div class="stats">
-                <i class="{item.icon}"></i>
+                <i class="{item}"></i>
             </div>
-        {/if}
-    {/each}  
+        {/each}
     </div>
 </div>
 
