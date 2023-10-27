@@ -1,3 +1,11 @@
+<script>
+    const blockData = [
+      "A Galáctico Unveiled: Cristiano Ronaldo's Historic Move to Real Madrid",
+      "Ronaldo's Triumph: Leading Portugal to Euro 2016 Glory",
+      "CR7's Five-Star Legacy: Ballon d'Or Dominance",
+    ];
+</script>
+
 <div class="main-page-content">
     <div class="hero-video">
         <video autoplay muted loop poster="../images/poster-image.jpg"> 
@@ -10,15 +18,11 @@
         <div class="block block1"></div> 
         <div class="block block2"></div> 
         <div class="block block3"></div>    
-        <div class="block block4">
-            <p>A Galáctico Unveiled: Cristiano Ronaldo's Historic Move to Real Madrid</p>
-        </div> 
-        <div class="block block5">
-            <p>Ronaldo's Triumph: Leading Portugal to Euro 2016 Glory</p>
-        </div> 
-        <div class="block block6">
-            <p>CR7's Five-Star Legacy: Ballon d'Or Dominance</p>
-        </div> 
+        {#each blockData as data, index (index)}
+            <div class = "block block${index+4}">
+                <p>{data}</p>
+            </div>
+        {/each}
     </div>
     <div class="number-container">
         <h2>NUMEROS</h2>
