@@ -15,9 +15,10 @@
         <h2>Magnificient Ronaldo</h2>
     </div>
     <div class="grid-container">
-        <div class="block block1"></div> 
-        <div class="block block2"></div> 
-        <div class="block block3"></div>    
+        {#each [1, 2, 3] as i}
+            <div class = "block block{i}"></div>
+        {/each}
+        
         {#each blockData as data, index (index)}
             <div class = "block block${index+4}">
                 <p>{data}</p>
