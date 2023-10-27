@@ -4,6 +4,17 @@
       "Ronaldo's Triumph: Leading Portugal to Euro 2016 Glory",
       "CR7's Five-Star Legacy: Ballon d'Or Dominance",
     ];
+
+    const statsData = [
+        { number: "850", label: "GOALS" },
+        { number: "", label: "" }, 
+        { number: "1204", label: "MATCHES" },
+        { number: "", label: "" },
+        { number: "86", label: "TOTAL AWARDS" },
+        { icon: "fa-solid fa-futbol style-icon" },
+        { icon: "fa-solid fa-trophy style-icon" },
+        { icon: "fa-solid fa-award style-icon" }
+    ];
 </script>
 
 <div class="main-page-content">
@@ -26,7 +37,8 @@
         {/each}
     </div>
     <div class="number-container">
-        <h2>NUMEROS</h2>
+        
+        <!-- <h2>NUMEROS</h2>
         <div class="stats">
             <h2>850</h2>
             <h4>GOALS</h4>
@@ -49,7 +61,7 @@
         </div>
         <div class="stats">
             <i class="fa-solid fa-award style-icon"></i>
-        </div>
+        </div> -->
     </div>
 </div>
 
