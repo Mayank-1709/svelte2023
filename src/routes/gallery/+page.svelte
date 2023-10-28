@@ -32,8 +32,23 @@
             photoClass: "photo_3",
         },
 
+        {
+            name: "Cristiano Ronaldo's Children",
+            description: `Cristiano Ronaldo is a doting father to five children. Cristiano Jr., Mateo, Eva Maria, Alana Martina and Bella bring immense joy to his life.
+                          His social media often features heartwarming moments with his kids.`,
+            photoClass: "photo_4",
+        },
+
+        {
+            name: "Fitness",
+            description: `Cristiano Ronaldo's dedication to fitness is legendary. His rigorous workout routines, diet, 
+                          and commitment to staying in peak physical condition have made him an inspiration for fitness enthusiasts worldwide. `,
+            photoClass: "photo_5",
+        }
+
     ];
 </script>
+
 <div class="main-page-content"> 
    <div class="photo-container-career-highlights">
         <div class="headings">
