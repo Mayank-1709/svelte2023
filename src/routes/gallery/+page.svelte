@@ -1,3 +1,13 @@
+<script>
+    const careerData = [
+        "Ronaldo's football journey started at Sporting Lisbon.",
+        "In the iconic red jersey, Ronaldo soared to stardom.",
+        "Real Madrid witnessed Ronaldo's Galactico era.",
+        "Juventus saw Ronaldo's Serie A dominance.",
+        "Ronaldo's journey continues with AL-Nassr in Saudi Arabia.",
+        "Leading Portugal to victory, Ronaldo's captaincy shines."
+    ];
+</script>
 <div class="main-page-content"> 
    <div class="photo-container-career-highlights">
         <div class="headings">
