@@ -66,8 +66,8 @@
             <h2>PERSONAL LIFE</h2>
         </div>
         <div class="gallery">
-            {#each familyMembers as member (member.name, index)}
-                {#if index+1 % 2 !== 0}
+            {#each familyMembers as member, index (index)}
+                {#if (index+1) % 2 !== 0}
                     <div class="personal-life-photo {member.photoClass}"></div>
                     <div class="description">
                         <p>{member.description}</p>
