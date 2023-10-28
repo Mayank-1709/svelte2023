@@ -7,6 +7,32 @@
         "Ronaldo's journey continues with AL-Nassr in Saudi Arabia.",
         "Leading Portugal to victory, Ronaldo's captaincy shines."
     ];
+
+    let familyMembers = [
+        {
+            name: "José Dinis Aveiro",
+            description: `Cristiano Ronaldo's late father, José Dinis Aveiro, played a significant role in his life.
+                          Despite his passing in 2005, Cristiano often pays tribute to his father's memory,
+                          crediting him with inspiring his football journey.`,
+            photoClass: "photo_1",
+        },
+
+        {
+            name: "Maria Dolores dos Santos Aveiro",
+            description: `Maria Dolores dos Santos Aveiro is Cristiano Ronaldo's beloved mother. 
+                          Her unwavering support and guidance have been pivotal in shaping Cristiano's career and life.
+                          He holds a deep affection for her.`,
+            photoClass: "photo_2",              
+        },
+
+        {
+            name: "Georgina Rodríguez",
+            description: `Georgina Rodríguez is Cristiano Ronaldo's partner and the mother of one of his children, Alana Martina.
+                          They share a close bond and often share glimpses of their life together on social media.`,
+            photoClass: "photo_3",
+        },
+
+    ];
 </script>
 <div class="main-page-content"> 
    <div class="photo-container-career-highlights">
