@@ -557,33 +557,41 @@ body{
     transition: opacity 0.3s ease-in-out;
 }
 
+/* Highlight captions on hover within the career highlights container */
 .photo-container-career-highlights > div:hover p {
     opacity: 1;
 }
 
+/* Setting the background image for career highlights photo 1 */
 .photo1{
     background-image: var(--image-url-sporting);
 }
 
+/* Setting the background image for career highlights photo 2 */
 .photo2{
     background-image: var(--image-url-manchester);
 }
 
+/* Setting the background image for career highlights photo 3 */
 .photo3{
     background-image: var(--image-url-realmadrid-fc);
 }
 
+/* Setting the background image for career highlights photo 4 */
 .photo4{
     background-image: var(--image-url-juventus-fc);
 }
 
+/* Setting the background image for career highlights photo 5 */
 .photo5{
     background-image: var(--image-url-alnassr-fc);
 }
 
+/* Setting the background image for career highlights photo 6 */
 .photo6{
     background-image: var(--image-url-portugal);
 }
+
 
 .photo-container-personal-life{
     margin-top: 40px;
@@ -623,6 +631,7 @@ body{
     cursor: pointer;
 }
 
+/* Style for the personal life container */
 .personal-life-photo{
     background-size: cover;
     background-repeat: no-repeat;
@@ -632,26 +641,32 @@ body{
     margin: 10px;
 }
 
+/* Set the background image for personal life photo 1 (CR7's dad) */
 .photo_1{
     background-image: var(--image-url-cr7-dad);
 }
 
+/* Set the background image for personal life photo 2 (CR7's mom) */
 .photo_2{
     background-image: var(--image-url-cr7-mom);
 }
 
+/* Set the background image for personal life photo 3 (CR7's wife) */
 .photo_3{
     background-image: var(--image-url-cr7-wife);
 }
 
+/* Set the background image for personal life photo 4 (CR7's kids) */
 .photo_4{
     background-image: var(--image-url-cr7-kids);
 }
 
+/* Set the background image for personal life photo 5 (CR7's fitness) */
 .photo_5{
     background-image: var(--image-url-cr7-fitness);
 }
 
+/* Style for the video container with a top margin */
 .video-container{
     margin-top: 40px;
     max-width: 100%;
@@ -661,6 +676,7 @@ body{
     flex-wrap: wrap;
 }
 
+/* Style for the video gallery */
 .video-gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -670,6 +686,7 @@ body{
     width: 100%;
 }
 
+/* Style for individual video goals */
 .video-goals{
     height: 300px;
     max-width: 100%;
@@ -678,6 +695,7 @@ body{
     box-sizing: border-box;
 }
 
+/* Style for video elements within video goals */
 .video-goals video{
     width: 100%;
     height: auto;
