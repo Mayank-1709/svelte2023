@@ -27,6 +27,7 @@
 
 <!-- The main content of the webpage -->
 <div class="main-page-content">
+
     <!-- Hero video section -->
     <div class="hero-video">
         <video controls autoplay muted loop poster="../images/poster-image.jpg"> 
@@ -38,6 +39,7 @@
 
      <!-- Grid container for career highlights -->
     <div class="grid-container">
+        
         <!-- Display three empty blocks with dynamic content -->
         {#each [1, 2, 3] as i}
             <div class="block block{i}"></div>
