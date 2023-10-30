@@ -592,7 +592,7 @@ body{
     background-image: var(--image-url-portugal);
 }
 
-
+/* Style for the personal life photo container with a top margin */
 .photo-container-personal-life{
     margin-top: 40px;
     max-width: 100%;
@@ -602,6 +602,7 @@ body{
     flex-wrap: wrap;
 }
 
+/* Style for the gallery (personal life photos) */
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -611,11 +612,13 @@ body{
     width: 100%;
 }
 
+/* Style for the description of each personal life photo */
 .description{
     margin: 10px;
     position: relative;
 }
 
+/* Style for paragraphs within the photo descriptions */
 .description p{
     position: absolute;
     margin-top: 120px;
@@ -626,6 +629,7 @@ body{
     font-size: 2.4rem;
 }
 
+/* Hover effect on paragraphs in photo descriptions */
 .description p:hover{
     transform: scale(1.05);
     cursor: pointer;
