@@ -1,14 +1,18 @@
+/* Set a minimum width for the body to ensure a responsive layout */
 body{
     min-width: 900px;
 }
+
+/* CSS variables (custom properties) for reusability */
 :root {
-    --main-site-color: bisque; 
-    --font-family-cursive: cursive;
-    --font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    --font-size-small: 2rem;
-    --font-size-large: 5rem;
-    --text-shadow-effect:  4px 4px 4px rgba(0, 0, 0, 0.8);
-    --image-url-logo: url('../images/logo.jpg');
+    --main-site-color: bisque; /* Main site color */
+    --font-family-cursive: cursive; /* Cursive font family */
+    --font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Serif font family */
+    --font-size-small: 2rem; /* Small font size */
+    --font-size-large: 5rem; /* Large font size */
+    --text-shadow-effect:  4px 4px 4px rgba(0, 0, 0, 0.8); /* Text shadow effect */
+    --image-url-logo: url('../images/logo.jpg'); /* URL for the site logo */
+     /* Additional image URLs for various sections... */
     --image-url-realmadrid: url('../images/realmadrid.jpg');
     --image-url-euro2016: url('../images/euro2016.jpg');
     --image-url-ballondor: url('../images/ballond\'or.jpg');
@@ -25,6 +29,7 @@ body{
     --image-url-cr7-fitness: url('../images/cr7_fitness.jpg');
 }
 
+/* Style for the navigation container */
 .nav-container{
     width:100%;
 }
