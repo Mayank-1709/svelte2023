@@ -12,7 +12,8 @@ body{
     --font-size-large: 5rem; /* Large font size */
     --text-shadow-effect:  4px 4px 4px rgba(0, 0, 0, 0.8); /* Text shadow effect */
     --image-url-logo: url('../images/logo.jpg'); /* URL for the site logo */
-     /* Additional image URLs for various sections... */
+    
+    /* Additional image URLs for various sections... */
     --image-url-realmadrid: url('../images/realmadrid.jpg');
     --image-url-euro2016: url('../images/euro2016.jpg');
     --image-url-ballondor: url('../images/ballond\'or.jpg');
@@ -34,22 +35,27 @@ body{
     width:100%;
 }
 
+/* Style for the football animation element */
 .sub-main-header > div:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 70%;
 }
+
+/* Style for the football animation */
 .football-animation{
     height: 180px;
     display: flex;
     align-items: end;
 }
 
+/* Animating the football animation element */
 .football-animation{
     animation: 10s infinite positionChange;
 }
 
+/* Keyframes for football animation position change */
 @keyframes positionChange {
     0% { margin-left: initial; }
     20% { margin-left: 5rem; } 
@@ -59,6 +65,7 @@ body{
     100% { margin-left: initial; }
 }
 
+/* Style for the site logo */
 .logo{
     height:180px;
     background-image: var(--image-url-logo);
@@ -68,6 +75,7 @@ body{
     width: 50%;
 }
 
+/* Style for the site title container */
 .site-title-container{
     display: flex;
     flex-direction: column;
@@ -79,29 +87,35 @@ body{
     transition: color 1s ease-in-out;
 }
 
+/*Setting the width of all the elements in the site title container */
 .site-title-container  div{
     width: fit-content;
 }
 
+/*Adding margin to the second div in the site title container*/
 .site-title-container > div:nth-child(2){
     margin-left: 1.5em;
 }
 
+/*Adding margin to the third div in the site title container*/
 .site-title-container > div:nth-child(3){
     margin-left: 4.7em;
 }
 
+/* Setting the color to red and changing the pointer to cursor on hover*/
 .site-title-container:hover{
     color:red;
     cursor: pointer;
 }
 
+/* Style for the main header element */
 .main-header{
     padding: 10px; 
     animation: 10s infinite colourChange;
     background-color: var(--main-site-color);
 }
 
+/* Keyframes for background color change animation */
 @keyframes colourChange {
     0% { background-color: var(--main-site-color); }
     16.67% { background-color: #FF6B6B; } 
@@ -112,6 +126,7 @@ body{
     100% { background-color: var(--main-site-color); }
 }
 
+/* Style for the fixed header, fixing the position of the header on top of the page while scrolling the page*/
 #fixed-header{
     position: fixed;
     top: 0;
@@ -123,6 +138,7 @@ body{
     margin: 0;
 }
 
+/* Style for the sub-main header element */
 .sub-main-header{
     width: 100%;
     display: flex;
@@ -132,6 +148,7 @@ body{
     background-color: var(--main-site-color);
 }
 
+/* Style for the navigation header */
 .nav-header{
     display: flex;
     justify-content: space-evenly;
