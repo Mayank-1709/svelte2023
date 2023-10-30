@@ -98,40 +98,18 @@
             <h2>VIDEO GALLERY</h2>
         </div>
         <div class="video-gallery">
-            <div class="video-goals">
-                <video autoplay muted loop> 
-                    <source src="../videos/Video_1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video-goals"></div>
-            <div class="video-goals">
-                <video autoplay muted loop> 
-                    <source src="../videos/Video_2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video-goals"></div>
-            <div class="video-goals">
-                <video autoplay muted loop> 
-                    <source src="../videos/Video_3.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video-goals"></div>
-            <div class="video-goals">
-                <video autoplay muted loop> 
-                    <source src="../videos/Video_4.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video-goals"></div>
-            <div class="video-goals">
-                <video autoplay muted loop> 
-                    <source src="../videos/Video_5.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            {#each videoFilenames as video, index(index)}
+                {#if (index+1) % 2 !== 0}
+                <div class="video-goals">
+                    <video autoplay muted loop> 
+                        <source src="{video}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                {:else}
+                    <div class="video-goals"></div>
+                {/if}
+            {/each}
         </div>  
    </div>
 </div>
