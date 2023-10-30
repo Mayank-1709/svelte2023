@@ -22,7 +22,7 @@
 
 <div class="main-page-content">
     <div class="hero-video">
-        <video autoplay muted loop poster="../images/poster-image.jpg"> 
+        <video controls autoplay muted loop poster="../images/poster-image.jpg"> 
             <source src="../videos/cr7-hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>

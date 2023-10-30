@@ -101,7 +101,7 @@
             {#each videoFilenames as video, index(index)}
                 {#if (index+1) % 2 !== 0}
                 <div class="video-goals">
-                    <video autoplay muted loop> 
+                    <video controls autoplay muted loop> 
                         <source src="{video}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
