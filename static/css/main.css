@@ -632,9 +632,10 @@ body{
 /* Hover effect on paragraphs in photo descriptions */
 .description p:hover{
     background-color: teal;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
     opacity: 0.8;
     transform: rotate(5deg);
+    border: 2px solid white;
 }
 
 /* Style for the personal life container */
