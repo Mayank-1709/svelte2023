@@ -456,6 +456,7 @@ body{
     gap: 20px;
 }
 
+/* Styling the first div in the footer container to be a white border which seperated the footer elements from the main page */
 .footer-container > div:nth-of-type(1){
     height:2px;
     width: 100%;
@@ -463,6 +464,7 @@ body{
     background-color: white;
 }
 
+/* Styling properties for footer elements */
 .footer-elements{
     display: flex;
     background-color: var(--main-site-color);
@@ -473,18 +475,21 @@ body{
     width: 100%;
 }
 
+ /* Styling properties for the copyright section */
 .copyright{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Styling the text in the copyright section */
 .copyright h4{
     font-family: var(--font-family-serif);
     font-size: 1.5rem;
     color: black;
 }
 
+/* Styling properties for the career highlights container */
 .photo-container-career-highlights{
     max-width: 100%;
     overflow: hidden;
@@ -496,6 +501,7 @@ body{
     justify-content: center;
 }
 
+/* Styling properties for the elements in the container except the headings container */
 .photo-container-career-highlights > div:not(.headings){
     margin: 20px;
     height: 600px;
@@ -508,6 +514,7 @@ body{
     overflow: hidden;
 }
 
+ /* Styling properties for headings within the career highlights section */
 .headings{
     width: 100%;
     height:100px;
@@ -518,6 +525,7 @@ body{
     margin: 20px;
 }
 
+/* Styling the h2 element within the headings sections */
 .headings > h2{
     font-family: var(--font-family-serif);
     font-size: var(--font-size-large);
@@ -526,10 +534,12 @@ body{
     color: rgb(103, 67, 18);
 }
 
+/* Styling properties for hover effect on career highlights */
 .photo-container-career-highlights > div:not(.headings):hover{
     transform: scale(1.15);
 }
 
+/* Styling properties for career highlight captions */
 .photo-container-career-highlights > div p{
     position: absolute;
     bottom: 0;
