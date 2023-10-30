@@ -646,6 +646,14 @@ body{
     overflow: hidden;
     height: 600px;
     margin: 10px;
+    filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Removing the blur effect from the personal life photos on hover*/
+.personal-life-photo:hover{
+    filter: blur(0);
+    border: 3px solid teal;
 }
 
 /* Set the background image for personal life photo 1 (CR7's dad) */

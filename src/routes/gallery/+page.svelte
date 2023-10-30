@@ -63,6 +63,7 @@
     ];
 </script>
 
+<!-- The main content of the webpage -->
 <div class="main-page-content"> 
 
     <!-- Career highlights section -->
