@@ -92,17 +92,17 @@ body{
     width: fit-content;
 }
 
-/*Adding margin to the second div in the site title container*/
+/*Adding margin to the second div in the site title container */
 .site-title-container > div:nth-child(2){
     margin-left: 1.5em;
 }
 
-/*Adding margin to the third div in the site title container*/
+/*Adding margin to the third div in the site title container */
 .site-title-container > div:nth-child(3){
     margin-left: 4.7em;
 }
 
-/* Setting the color to red and changing the pointer to cursor on hover*/
+/* Setting the color to red and changing the pointer to cursor on hover */
 .site-title-container:hover{
     color:red;
     cursor: pointer;
@@ -126,7 +126,7 @@ body{
     100% { background-color: var(--main-site-color); }
 }
 
-/* Style for the fixed header, fixing the position of the header on top of the page while scrolling the page*/
+/* Style for the fixed header, fixing the position of the header on top of the page while scrolling the page */
 #fixed-header{
     position: fixed;
     top: 0;
@@ -157,6 +157,7 @@ body{
     box-sizing: border-box;
 }
 
+/* Style for the navigation menu */
 .nav-menu{
     list-style: none;
     display: flex;
@@ -166,6 +167,7 @@ body{
     box-sizing: border-box;
 }
 
+/* Style for navigation menu links */
 .nav-menu li a {
     text-decoration: none;
     font-family: var(--font-family-cursive);
@@ -173,15 +175,17 @@ body{
     text-shadow: var(--text-shadow-effect);
     color: black;
     transition: color 1s ease;
-  }
+}
 
-  .nav-menu li a:hover {
+/*Setting the color to red when the nav links are hovered over */
+.nav-menu li a:hover {
     color: red;
-  }
+}
 
-  @media screen and (max-width: 1799px) {
+/* Media query for screens with a maximum width of 1799px */
+@media screen and (max-width: 1799px) {
     .football-animation {
-      animation: none; 
+        animation: none; 
     }
 
     .hero-video h2 {
@@ -191,6 +195,7 @@ body{
     }
 }
 
+/* Media query for screens with a maximum width of 1200px */
 @media screen and (max-width: 1200px) {
     .football-animation {
       display: none; 
@@ -236,9 +241,10 @@ body{
         font-size: 1.5rem !important;
         margin-top: 40px !important;
     }
-  }
+}
 
-  @media screen and (max-width: 924px) {
+/* Media query for screens with a maximum width of 924px */
+@media screen and (max-width: 924px) {
     .hero-video h2 {
         display: none;
     }
@@ -263,8 +269,9 @@ body{
     .video-goals:nth-of-type(even){
         display: none;
     }
-  }
+}
 
+/* Styling properties for the main page content */
 .main-page-content{
     padding: 20px;
     background-color: var(--main-site-color);
@@ -273,6 +280,8 @@ body{
     padding-top: 250px;
     margin: 0;
 }
+
+ /* Styling properties for the hero video section */
 .hero-video{
     max-width: 100%;
     overflow: hidden;
@@ -283,6 +292,7 @@ body{
     position: relative;
 }
 
+/* Additional CSS styles for the hero video section */
 .hero-video video{
     width: 100%;
     height: auto;
@@ -290,10 +300,12 @@ body{
     padding: 20px;
 }
 
+/* Adjusting the position of the control buttons in the hero video by tweaking padding */
 .hero-video video::-webkit-media-controls-panel {
     padding: 50px;
-  }
+}
 
+/* Styling the text for the hero video */
 .hero-video h2{
     width:50%;
     height: auto;
@@ -307,6 +319,7 @@ body{
     box-sizing: border-box;
 }
 
+ /* Styling properties for grid containers */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -315,6 +328,7 @@ body{
     margin-top: 20px;
 }
 
+/* Styling the first three child block elments */
 .block:nth-child(-n+3){
     height: 600px;
     background-size: cover;
@@ -322,18 +336,22 @@ body{
     background-position: center;
 }
 
+/* Setting the background image for the first block element */
 .block1{
     background-image: var(--image-url-realmadrid);  
 }
 
+/* Setting the background image for the second block element */
 .block2{
     background-image: var(--image-url-euro2016);
 }
 
+/* Setting the background image for the third block element */
 .block3{
     background-image: var(--image-url-ballondor);
 }
 
+/* Styling the fourth, fifth and sixth elements with the block class */
 .block:nth-child(n+4){
     height: 300px;
     border-radius: 200px;
@@ -344,6 +362,7 @@ body{
     animation: 10s infinite backgroundChange;
 }
 
+/* Keyframes for background color change animation on blocks */
 @keyframes backgroundChange{
     0% { background-color:  rgb(235, 235, 183); }
     16.67% { background-color: rgb(183, 235, 235); } 
@@ -355,6 +374,7 @@ body{
     
 }
 
+/* Styling the text in the block class and the description class */
 .block:nth-child(n+4) p,
 .description p{
     text-align: center; 
@@ -363,6 +383,7 @@ body{
     font-size: 2.8rem;
     text-shadow: var(--text-shadow-effect);
 }
+
 
 .number-container{
     display: flex;
