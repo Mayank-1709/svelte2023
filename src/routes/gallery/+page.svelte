@@ -45,7 +45,18 @@
                           and commitment to staying in peak physical condition have made him an inspiration for fitness enthusiasts worldwide. `,
             photoClass: "photo_5",
         }
+    ];
 
+    const videoFilenames = [
+        "../videos/Video_1.mp4",
+        " ",
+        "../videos/Video_2.mp4",
+        " ",
+        "../videos/Video_3.mp4",
+        " ",
+        "../videos/Video_4.mp4",
+        " ",
+        "../videos/Video_5.mp4"
     ];
 </script>
 
