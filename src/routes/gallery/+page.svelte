@@ -1,4 +1,5 @@
 <script>
+    // Data for career highlights section
     const careerData = [
         "Ronaldo's football journey started at Sporting Lisbon.",
         "In the iconic red jersey, Ronaldo soared to stardom.",
@@ -8,6 +9,7 @@
         "Leading Portugal to victory, Ronaldo's captaincy shines."
     ];
 
+    // Data for personal life section
     let familyMembers = [
         {
             name: "José Dinis Aveiro",
@@ -47,6 +49,7 @@
         }
     ];
 
+    // Filenames for video gallery
     const videoFilenames = [
         "../videos/Video_1.mp4",
         " ",
@@ -61,29 +64,34 @@
 </script>
 
 <div class="main-page-content"> 
+
+    <!-- Career highlights section -->
    <div class="photo-container-career-highlights">
         <div class="headings">
-            <h2>CAREER HIGHLIGHTS</h2>
+            <h2>CAREER HIGHLIGHTS</h2> <!-- Title for the section -->
         </div>
         {#each careerData as data, index(index)}
             <div class="photo{index+1}">
-                <p>{data}</p>
+                <p>{data}</p> <!-- Display each career highlight with corresponding index -->
             </div>
         {/each}
    </div> 
 
+   <!-- Personal life section -->
    <div class="photo-container-personal-life">
         <div class="headings">
-            <h2>PERSONAL LIFE</h2>
+            <h2>PERSONAL LIFE</h2>  <!-- Title for the section -->
         </div>
         <div class="gallery">
             {#each familyMembers as member, index (index)}
                 {#if (index+1) % 2 !== 0}
+                <!-- Display family member photo and description based on index % 2-->
                     <div class="personal-life-photo {member.photoClass}"></div>
                     <div class="description">
                         <p>{member.description}</p>
                     </div>
                 {:else}
+                <!-- Display family member description and photo -->
                     <div class="description">
                         <p>{member.description}</p>
                     </div>
@@ -93,20 +101,23 @@
         </div>
    </div>
 
+   <!-- Video gallery section -->
    <div class="video-container">
         <div class="headings">
-            <h2>VIDEO GALLERY</h2>
+            <h2>VIDEO GALLERY</h2> <!-- Title for the section -->
         </div>
         <div class="video-gallery">
             {#each videoFilenames as video, index(index)}
                 {#if (index+1) % 2 !== 0}
                 <div class="video-goals">
+                    <!-- Display video with controls and autoplay behavior -->
                     <video controls autoplay muted loop> 
                         <source src="{video}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 {:else}
+                <!-- Create an empty slot for even indices -->
                     <div class="video-goals"></div>
                 {/if}
             {/each}
