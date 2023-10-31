@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import careerData from "../../lib/Careerdata.json";
 
   let urls = [];
   const BASE_URL = `https://api.unsplash.com`;
@@ -35,14 +36,15 @@
   });
 
   // Data for career highlights section
-  const careerData = [
-    "Ronaldo's football journey started at Sporting Lisbon.",
-    "In the iconic red jersey, Ronaldo soared to stardom.",
-    "Real Madrid witnessed Ronaldo's Galactico era.",
-    "Juventus saw Ronaldo's Serie A dominance.",
-    "Ronaldo's journey continues with AL-Nassr in Saudi Arabia.",
-    "Leading Portugal to victory, Ronaldo's captaincy shines.",
-  ];
+//   const careerData = 
+//   [
+//     "Ronaldo's football journey started at Sporting Lisbon.",
+//     "In the iconic red jersey, Ronaldo soared to stardom.",
+//     "Real Madrid witnessed Ronaldo's Galactico era.",
+//     "Juventus saw Ronaldo's Serie A dominance.",
+//     "Ronaldo's journey continues with AL-Nassr in Saudi Arabia.",
+//     "Leading Portugal to victory, Ronaldo's captaincy shines.",
+//   ];
 
   // Data for personal life section
   let familyMembers = [
