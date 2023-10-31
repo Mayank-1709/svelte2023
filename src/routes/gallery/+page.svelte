@@ -10,6 +10,7 @@
     onMount(async () => {
         const response = await fetch(`${BASE_URL}/search/photos?query=soccer&per_page=4&client_id=${CLIENT_ID}`);
         const data = await response.json();
+        console.log(data);
         data.results.forEach(result => {
             football.push(result.urls.regular); 
         }); 
