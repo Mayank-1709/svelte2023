@@ -334,6 +334,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styling the images to be circular when hovered upon*/
+.block:nth-child(-n+3):hover{
+    border-radius: 50%;
 }
 
 /* Setting the background image for the first block element */
