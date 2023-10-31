@@ -1,4 +1,20 @@
 <script>
+
+    import { onMount } from 'svelte';
+
+    let football = [];
+
+    const BASE_URL = `https://api.unsplash.com`;
+    const CLIENT_ID = `udhKpbCA3oTftT1_unc7veA5kDEvPVBcEkHVjM7rN7E`;
+
+    onMount(async () => {
+        const response = await fetch(`${BASE_URL}/search/photos?query=soccer&per_page=4&client_id=${CLIENT_ID}`);
+        const data = await response.json();
+        data.results.forEach(result => {
+            football.push(result.urls.regular); 
+        }); 
+    });
+
     // Data for career highlights section
     const careerData = [
         "Ronaldo's football journey started at Sporting Lisbon.",
