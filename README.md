@@ -13,3 +13,20 @@ The Cristiano Ronaldo Website is a dedicated online platform providing a compreh
 ## Technologies Used
 - **Svelte**: The website is built using the Svelte framework using HTML, CSS & Javascript.
 - **[Additional Technologies]**: Node.js environment, Unsplash API, VS Code text editor.
+
+## Installation
+1. Clone the repository:
+```bash
+   git clone https://github.com/Mayank-1709/svelte2023.git
+2. Change the working directory:
+```bash
+   cd svelte2023
+3. Open the project folder in VS Code
+```bash
+   code .
+4. Install dependencies:
+```bash
+   npm install
+5. Run Application:
+```bash
+   npm run dev
