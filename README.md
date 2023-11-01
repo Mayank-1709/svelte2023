@@ -35,3 +35,17 @@ npm install
 ```bash
 npm run dev
 ```
+## Future Features
+For future enhancements, I plan to introduce several exciting additions to my website dedicated to Cristiano Ronaldo:
+
+1. Comprehensive Career Stats Page: A dedicated page with in-depth statistics, including career milestones, records, and performance metrics.
+
+2. Expanded Multimedia Content: More captivating videos and images, showcasing the highlights of Cristiano Ronaldo's illustrious career.
+
+3. User Authentication and Merchandise Orders: Implement user authentication to provide a seamless login experience, enabling fans to order CR7 merchandise with ease.
+
+4. Merchandise Page: A dedicated section for CR7 merchandise, where fans can explore and purchase a wide range of products.
+
+5. Fan Interaction Zone: Create a "Fans Section" where users can share their thoughts, admiration, and personal stories related to Cristiano Ronaldo.
+
+6. Enhanced Interactivity: Incorporate interactive elements and cool animations to make the website more engaging and visually appealing.
