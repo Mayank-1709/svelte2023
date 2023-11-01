@@ -32,6 +32,15 @@
 
         urls = tempUrls;
     });
+
+    const handleVideoHover = (event) => {
+        if (event.type === "mouseenter") {
+            event.target.play();
+        } 
+        else if (event.type === "mouseleave") {
+            event.target.pause();
+        }
+    }
 </script>
 
 <!-- The main content of the webpage -->
@@ -86,7 +95,7 @@
                 {#if (url.match('.mp4'))}
                 <div class="video-goals">
                     <!-- Display video with controls and autoplay behavior -->
-                    <video controls autoplay muted loop>
+                    <video on:mouseenter={handleVideoHover} on:mouseleave={handleVideoHover} controls muted loop>
                     <source src={url} type="video/mp4" />
                     Your browser does not support the video tag.
                     </video>
