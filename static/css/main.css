@@ -709,23 +709,65 @@ body{
 
 /* Style for individual video goals */
 .video-goals{
-    height: fit-content;
-    max-width: fit-content;
+    height: 300px;
+    max-width: 100%;
     overflow: hidden;
     margin: 10px;
     box-sizing: border-box;  
 }
 
+/* Common styles for all image containers */
 .image-container{
-    height: auto;
+    height: 300px;
     max-width: 100%;
     background-repeat: no-repeat;
     background-size:cover;
-    border-radius: 100%;
+    border-radius: 50%;
+    border: 2px solid #333;
+    opacity: 0;
 }
 
+/* Individual image animations */
+.image-container.image1 {
+    animation: imageFadeIn 12s ease infinite;
+}
+  
+.image-container.image3 {
+    animation: imageFadeIn 12s ease infinite;
+    animation-delay: 3s;
+}
+  
+.image-container.image7 {
+    animation: imageFadeIn 12s ease infinite;
+    animation-delay: 6s;
+}
+  
+.image-container.image5 {
+    animation: imageFadeIn 12s ease infinite;
+    animation-delay: 9s;
+}
+
+/* Keyframes animation for fading in and out */
+@keyframes imageFadeIn {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+  
 /* Style for video elements within video goals */
 .video-goals video{
     width: 100%;
-    height: auto;
+    height: fit-content;
 }
