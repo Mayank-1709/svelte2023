@@ -709,17 +709,19 @@ body{
 
 /* Style for individual video goals */
 .video-goals{
-    height: 300px;
-    max-width: 100%;
+    height: fit-content;
+    max-width: fit-content;
     overflow: hidden;
     margin: 10px;
     box-sizing: border-box;  
 }
 
-.video-goals:nth-of-type(even){
+.image-container{
+    height: auto;
+    max-width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
+    background-size:cover;
+    border-radius: 100%;
 }
 
 /* Style for video elements within video goals */

@@ -82,7 +82,7 @@
         <!-- Title for the section -->
         </div>
         <div class="video-gallery">
-            {#each urls as url}
+            {#each urls as url, index(index)}
                 {#if (url.match('.mp4'))}
                 <div class="video-goals">
                     <!-- Display video with controls and autoplay behavior -->
@@ -92,8 +92,8 @@
                     </video>
                 </div>
                 {:else}
-                <!-- Create an empty slot for even indices -->
-                <div class="video-goals" style="background-image: url({url})"></div>
+                <!-- Create a div for images -->
+                <div class="image-container image{index}" style="background-image: url({url})"></div>
                 {/if}
             {/each}
         </div>
