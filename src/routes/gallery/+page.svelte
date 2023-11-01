@@ -93,9 +93,7 @@
                 </div>
                 {:else}
                 <!-- Create an empty slot for even indices -->
-                <div class="video-goals">
-                    <img src={url} alt="Alternate text" />
-                </div>
+                <div class="video-goals" style="background-image: url({url})"></div>
                 {/if}
             {/each}
         </div>
