@@ -5,13 +5,13 @@ body{
 
 /* CSS variables (custom properties) for reusability */
 :root {
-    --main-site-color: bisque; /* Main site color */
-    --font-family-cursive: cursive; /* Cursive font family */
-    --font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Serif font family */
-    --font-size-small: 2rem; /* Small font size */
-    --font-size-large: 5rem; /* Large font size */
-    --text-shadow-effect:  4px 4px 4px rgba(0, 0, 0, 0.8); /* Text shadow effect */
-    --image-url-logo: url('../images/logo.jpg'); /* URL for the site logo */
+    --main-site-color: bisque; 
+    --font-family-cursive: cursive; 
+    --font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    --font-size-small: 2rem; 
+    --font-size-large: 5rem; 
+    --text-shadow-effect:  4px 4px 4px rgba(0, 0, 0, 0.8); 
+    --image-url-logo: url('../images/logo.jpg'); 
     
     /* Additional image URLs for various sections... */
     --image-url-realmadrid: url('../images/realmadrid.jpg');
@@ -30,7 +30,6 @@ body{
     --image-url-cr7-fitness: url('../images/cr7_fitness.jpg');
 }
 
-/* Style for the navigation container */
 .nav-container{
     width:100%;
 }
@@ -381,6 +380,7 @@ body{
     animation: blink 2s infinite;
 }
 
+/* Animation for blinking effect on text*/
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
@@ -564,32 +564,27 @@ body{
     opacity: 1;
 }
 
-/* Setting the background image for career highlights photo 1 */
+/* Setting the background image for career highlights photo  */
 .photo1{
     background-image: var(--image-url-sporting);
 }
 
-/* Setting the background image for career highlights photo 2 */
 .photo2{
     background-image: var(--image-url-manchester);
 }
 
-/* Setting the background image for career highlights photo 3 */
 .photo3{
     background-image: var(--image-url-realmadrid-fc);
 }
 
-/* Setting the background image for career highlights photo 4 */
 .photo4{
     background-image: var(--image-url-juventus-fc);
 }
 
-/* Setting the background image for career highlights photo 5 */
 .photo5{
     background-image: var(--image-url-alnassr-fc);
 }
 
-/* Setting the background image for career highlights photo 6 */
 .photo6{
     background-image: var(--image-url-portugal);
 }
@@ -658,27 +653,23 @@ body{
     border: 3px solid teal;
 }
 
-/* Set the background image for personal life photo 1 (CR7's dad) */
+/* Set the background image for personal life photo  */
 .photo_1{
     background-image: var(--image-url-cr7-dad);
 }
 
-/* Set the background image for personal life photo 2 (CR7's mom) */
 .photo_2{
     background-image: var(--image-url-cr7-mom);
 }
 
-/* Set the background image for personal life photo 3 (CR7's wife) */
 .photo_3{
     background-image: var(--image-url-cr7-wife);
 }
 
-/* Set the background image for personal life photo 4 (CR7's kids) */
 .photo_4{
     background-image: var(--image-url-cr7-kids);
 }
 
-/* Set the background image for personal life photo 5 (CR7's fitness) */
 .photo_5{
     background-image: var(--image-url-cr7-fitness);
 }

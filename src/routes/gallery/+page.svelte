@@ -36,7 +36,7 @@
             tempUrls.push(videoFilenames[i]);
         }
 
-        urls = tempUrls; // Set the URLs for the gallery
+        urls = tempUrls; 
     });
 
     // Function to handle video hover events (play on hover, pause on leave)

@@ -1,12 +1,12 @@
 <script>
-    import Nav from '$lib/Nav.svelte' // Import the 'Nav' component from a Svelte module
+    import Nav from '$lib/Nav.svelte' 
 </script>
 <header class="main-header" id="fixed-header">
     <div class=sub-main-header>
         <div class="site-title-container">
-            <div>The</div> <!-- The first part of the site title -->
-            <div>Ronaldo</div> <!-- The second part of the site title -->
-            <div>Realm</div> <!-- The third part of the site title -->
+            <div>The</div> 
+            <div>Ronaldo</div> 
+            <div>Realm</div> 
         </div>
         <div>
             <div class="football-animation">
