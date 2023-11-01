@@ -264,10 +264,6 @@ body{
     .video-goals{
         height: 400px !important;
     }
-
-    .video-goals:nth-of-type(even){
-        display: none;
-    }
 }
 
 /* Styling properties for the main page content */
