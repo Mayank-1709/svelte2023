@@ -7,14 +7,19 @@
     const BASE_URL = `https://api.unsplash.com`;
     const CLIENT_ID = `udhKpbCA3oTftT1_unc7veA5kDEvPVBcEkHVjM7rN7E`;
 
+    // Fetch data when the component is mounted
     onMount(async () => {
+        // Fetch photos related to soccer from the Unsplash API
         const response = await fetch(`${BASE_URL}/search/photos?query=soccer&per_page=4&client_id=${CLIENT_ID}` );
         const data = await response.json();
         const football = [];
+
+        // Extract regular photo URLs from the API response
         data.results.forEach((result) => {
             football.push(result.urls.regular);
         });
 
+        // Create a temporary URL array with the initial video
         const tempUrls = ["../videos/Video_1.mp4"];
 
         // Filenames for video gallery
@@ -25,14 +30,16 @@
             "../videos/Video_5.mp4",
         ];
 
+        // Combine photo and video URLs for the gallery
         for (let i = 0; i < football.length; i++) {
             tempUrls.push(football[i]);
             tempUrls.push(videoFilenames[i]);
         }
 
-        urls = tempUrls;
+        urls = tempUrls; // Set the URLs for the gallery
     });
 
+    // Function to handle video hover events (play on hover, pause on leave)
     const handleVideoHover = (event) => {
         if (event.type === "mouseenter") {
             event.target.play();
