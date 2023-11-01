@@ -1,28 +1,7 @@
-<!-- This script section defines data arrays for later use in the HTML -->
 <script>
-
-    // Array holding titles for the grid blocks
-    const blockData = [
-      "A Galáctico Unveiled: Cristiano Ronaldo's Historic Move to Real Madrid",
-      "Ronaldo's Triumph: Leading Portugal to Euro 2016 Glory",
-      "CR7's Five-Star Legacy: Ballon d'Or Dominance",
-    ];
-
-    // Array holding statistics data
-    const statsData = [
-        { number: "850", label: "GOALS" },
-        { number: "", label: "" }, 
-        { number: "1204", label: "MATCHES" },
-        { number: "", label: "" },
-        { number: "86", label: "TOTAL AWARDS" }
-    ];
-
-    // Array holding CSS classes for icons
-    const iconData = [
-         "fa-solid fa-futbol style-icon",
-         "fa-solid fa-trophy style-icon",
-         "fa-solid fa-award style-icon"
-    ];
+    import statsData from "../lib/Statsdata.json";
+    import { blockData } from "../lib/Data.json";
+    import { iconData } from "../lib/Data.json";
 </script>
 
 <!-- The main content of the webpage -->
