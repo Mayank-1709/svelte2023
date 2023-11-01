@@ -16,12 +16,22 @@ The Cristiano Ronaldo Website is a dedicated online platform providing a compreh
 
 ## Installation
 1. Clone the repository:
-```bash git clone https://github.com/Mayank-1709/svelte2023.git
+```bash
+git clone https://github.com/Mayank-1709/svelte2023.git
+```
 2. Change the working directory:
-```bash cd svelte2023
+```bash
+cd svelte2023
+```
 3. Open the project folder in VS Code
-```bash code .
+```bash
+code .
+```
 4. Install dependencies:
-```bash npm install
+```bash
+npm install
+```
 5. Run Application:
-```bash npm run dev
+```bash
+npm run dev
+```
