@@ -53,11 +53,18 @@ For future enhancements, I plan to introduce several exciting additions to my we
 ## Screenshots
 Here are some screenshots of my website:
 ![Screenshot_1](/static/images/Screenshot_1.png)
+
 ![Screenshot_2](/static/images/Screenshot_2.png)
+
 ![Screenshot_3](/static/images/Screenshot_3.png)
+
 ![Screenshot_4](/static/images/Screenshot_4.png)
+
 ![Screenshot_5](/static/images/Screenshot_5.png)
+
 ![Screenshot_6](/static/images/Screenshot_6.png)
+
 ![Screenshot_7](/static/images/Screenshot_7.png)
+
 
 
