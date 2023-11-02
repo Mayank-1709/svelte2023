@@ -10,13 +10,23 @@
     // Fetch data when the component is mounted
     onMount(async () => {
         // Fetch photos related to soccer from the Unsplash API
-        const response = await fetch(`${BASE_URL}/search/photos?query=soccer&per_page=4&client_id=${CLIENT_ID}` );
+        const response = await fetch(`${BASE_URL}/search/photos?query=soccer&per_page=20&client_id=${CLIENT_ID}` );
         const data = await response.json();
+    
+        // Generating 4 random numbres between 0 and 20(exclusive) to select 4 image urls from 20 fetched from API
+        const randomIndices = [];
+        while (randomIndices.length < 4){
+            const randomIndex = Math.floor(Math.random() * 20);
+            if(!randomIndices.includes(randomIndex)){
+                randomIndices.push(randomIndex);
+            }
+        }
+    
         const football = [];
 
-        // Extract regular photo URLs from the API response
-        data.results.forEach((result) => {
-            football.push(result.urls.regular);
+        // Extract 4 regular photo URLs from the API response
+        randomIndices.forEach((index) => {
+            football.push(data.results[index].urls.regular);
         });
 
         // Create a temporary URL array with the initial video
