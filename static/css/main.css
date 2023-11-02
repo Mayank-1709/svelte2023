@@ -192,6 +192,15 @@ body{
         top: 50% !important;
         transform: translate(0, -50%); 
     }
+
+    .image-container{
+        display: none;
+    }
+
+    .video-gallery{
+        grid-template-columns: repeat(2, 1fr) !important;    
+    }
+
 }
 
 /* Media query for screens with a maximum width of 1200px */
