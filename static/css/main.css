@@ -193,13 +193,9 @@ body{
         transform: translate(0, -50%); 
     }
 
-    .image-container{
-        display: none;
-    }
-
     .video-gallery{
         grid-template-columns: repeat(2, 1fr) !important;    
-    }
+    }  
 
 }
 
@@ -251,7 +247,8 @@ body{
     }
 
     .image-container{
-        visibility: hidden;
+        height: 250px !important;
+        margin-top: -60px;
     }
 }
 
