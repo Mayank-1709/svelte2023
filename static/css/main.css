@@ -240,6 +240,10 @@ body{
         font-size: 1.5rem !important;
         margin-top: 40px !important;
     }
+
+    .image-container{
+        visibility: hidden;
+    }
 }
 
 /* Media query for screens with a maximum width of 924px */
@@ -263,6 +267,10 @@ body{
 
     .video-goals{
         height: 400px !important;
+    }
+
+    .image-container{
+        display: none;
     }
 }
 
