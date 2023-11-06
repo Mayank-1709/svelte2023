@@ -1,26 +1,26 @@
 [
-    { 
-        "number": "850", 
-        "label": "GOALS" 
-    },
+  {
+    "number": "850",
+    "label": "GOALS"
+  },
 
-    { 
-        "number": "",
-        "label": "" 
-    },
+  {
+    "number": "",
+    "label": ""
+  },
 
-    { 
-        "number": "1204",
-        "label": "MATCHES"
-    },
+  {
+    "number": "1204",
+    "label": "MATCHES"
+  },
 
-    { 
-        "number": "",
-        "label": "" 
-    },
+  {
+    "number": "",
+    "label": ""
+  },
 
-    {
-         "number": "86",
-        "label": "TOTAL AWARDS"
-    }
+  {
+    "number": "86",
+    "label": "TOTAL AWARDS"
+  }
 ]

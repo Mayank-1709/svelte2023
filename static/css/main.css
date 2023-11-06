@@ -1,772 +1,802 @@
 /* Set a minimum width for the body to ensure a responsive layout */
-body{
-    min-width: 900px;
+body {
+  min-width: 900px;
 }
 
 /* CSS variables (custom properties) for reusability */
 :root {
-    --main-site-color: bisque; 
-    --font-family-cursive: cursive; 
-    --font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    --font-size-small: 2rem; 
-    --font-size-large: 5rem; 
-    --text-shadow-effect:  4px 4px 4px rgba(0, 0, 0, 0.8); 
-    --image-url-logo: url('../images/logo.jpg'); 
-    
-    /* Additional image URLs for various sections... */
-    --image-url-realmadrid: url('../images/realmadrid.jpg');
-    --image-url-euro2016: url('../images/euro2016.jpg');
-    --image-url-ballondor: url('../images/ballond\'or.jpg');
-    --image-url-sporting: url('../images/sporting_FC.jpg');
-    --image-url-manchester: url('../images/Manchester_FC.jpg');
-    --image-url-realmadrid-fc: url('../images/Realmadrid_FC.jpg');
-    --image-url-juventus-fc: url('../images/Juventus_FC.jpg');
-    --image-url-alnassr-fc: url('../images/Al-Nassr_FC.jpg');
-    --image-url-portugal: url('../images/Portugal.jpg');
-    --image-url-cr7-dad: url('../images/cr7_dad.jpg');
-    --image-url-cr7-mom: url('../images/cr7_mom.jpg');
-    --image-url-cr7-wife: url('../images/cr7_wife.jpg');
-    --image-url-cr7-kids: url('../images/cr7_kids.jpg');
-    --image-url-cr7-fitness: url('../images/cr7_fitness.jpg');
+  --main-site-color: bisque;
+  --font-family-cursive: cursive;
+  --font-family-serif: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --font-size-small: 2rem;
+  --font-size-large: 5rem;
+  --text-shadow-effect: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  --image-url-logo: url("../images/logo.jpg");
+
+  /* Additional image URLs for various sections... */
+  --image-url-realmadrid: url("../images/realmadrid.jpg");
+  --image-url-euro2016: url("../images/euro2016.jpg");
+  --image-url-ballondor: url("../images/ballond'or.jpg");
+  --image-url-sporting: url("../images/sporting_FC.jpg");
+  --image-url-manchester: url("../images/Manchester_FC.jpg");
+  --image-url-realmadrid-fc: url("../images/Realmadrid_FC.jpg");
+  --image-url-juventus-fc: url("../images/Juventus_FC.jpg");
+  --image-url-alnassr-fc: url("../images/Al-Nassr_FC.jpg");
+  --image-url-portugal: url("../images/Portugal.jpg");
+  --image-url-cr7-dad: url("../images/cr7_dad.jpg");
+  --image-url-cr7-mom: url("../images/cr7_mom.jpg");
+  --image-url-cr7-wife: url("../images/cr7_wife.jpg");
+  --image-url-cr7-kids: url("../images/cr7_kids.jpg");
+  --image-url-cr7-fitness: url("../images/cr7_fitness.jpg");
 }
 
-.nav-container{
-    width:100%;
+.nav-container {
+  width: 100%;
 }
 
 /* Style for the football animation element */
-.sub-main-header > div:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 70%;
+.sub-main-header > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
 }
 
 /* Style for the football animation */
-.football-animation{
-    height: 180px;
-    display: flex;
-    align-items: end;
+.football-animation {
+  height: 180px;
+  display: flex;
+  align-items: end;
 }
 
 /* Animating the football animation element */
-.football-animation{
-    animation: 10s infinite positionChange;
+.football-animation {
+  animation: 10s infinite positionChange;
 }
 
 /* Keyframes for football animation position change */
 @keyframes positionChange {
-    0% { margin-left: initial; }
-    20% { margin-left: 5rem; } 
-    40% { margin-left: 10rem; } 
-    60% { margin-left: 15rem; }
-    80% { margin-left: 23rem; }
-    100% { margin-left: initial; }
+  0% {
+    margin-left: initial;
+  }
+  20% {
+    margin-left: 5rem;
+  }
+  40% {
+    margin-left: 10rem;
+  }
+  60% {
+    margin-left: 15rem;
+  }
+  80% {
+    margin-left: 23rem;
+  }
+  100% {
+    margin-left: initial;
+  }
 }
 
 /* Style for the site logo */
-.logo{
-    height:180px;
-    background-image: var(--image-url-logo);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
+.logo {
+  height: 180px;
+  background-image: var(--image-url-logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
 }
 
 /* Style for the site title container */
-.site-title-container{
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    font-family: var(--font-family-cursive);
-    font-size: var(--font-size-small);
-    text-shadow: var(--text-shadow-effect);
-    width:40%;  
-    transition: color 1s ease-in-out;
+.site-title-container {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  font-family: var(--font-family-cursive);
+  font-size: var(--font-size-small);
+  text-shadow: var(--text-shadow-effect);
+  width: 40%;
+  transition: color 1s ease-in-out;
 }
 
 /*Setting the width of all the elements in the site title container */
-.site-title-container  div{
-    width: fit-content;
+.site-title-container div {
+  width: fit-content;
 }
 
 /*Adding margin to the second div in the site title container */
-.site-title-container > div:nth-child(2){
-    margin-left: 1.5em;
+.site-title-container > div:nth-child(2) {
+  margin-left: 1.5em;
 }
 
 /*Adding margin to the third div in the site title container */
-.site-title-container > div:nth-child(3){
-    margin-left: 4.7em;
+.site-title-container > div:nth-child(3) {
+  margin-left: 4.7em;
 }
 
 /* Setting the color to red and changing the pointer to cursor on hover */
-.site-title-container:hover{
-    color:red;
-    cursor: pointer;
+.site-title-container:hover {
+  color: red;
+  cursor: pointer;
 }
 
 /* Style for the main header element */
-.main-header{
-    padding: 10px; 
-    animation: 10s infinite colourChange;
-    background-color: var(--main-site-color);
+.main-header {
+  padding: 10px;
+  animation: 10s infinite colourChange;
+  background-color: var(--main-site-color);
 }
 
 /* Keyframes for background color change animation */
 @keyframes colourChange {
-    0% { background-color: var(--main-site-color); }
-    16.67% { background-color: #FF6B6B; } 
-    33.33% { background-color: #00CED1; } 
-    50% { background-color: #FFD700; } 
-    66.67% { background-color: #9370DB; }
-    83.33% { background-color: #32CD32; } 
-    100% { background-color: var(--main-site-color); }
+  0% {
+    background-color: var(--main-site-color);
+  }
+  16.67% {
+    background-color: #ff6b6b;
+  }
+  33.33% {
+    background-color: #00ced1;
+  }
+  50% {
+    background-color: #ffd700;
+  }
+  66.67% {
+    background-color: #9370db;
+  }
+  83.33% {
+    background-color: #32cd32;
+  }
+  100% {
+    background-color: var(--main-site-color);
+  }
 }
 
 /* Style for the fixed header, fixing the position of the header on top of the page while scrolling the page */
-#fixed-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1;
-    box-sizing: border-box;
-    margin: 0;
+#fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* Style for the sub-main header element */
-.sub-main-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: var(--main-site-color);
+.sub-main-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--main-site-color);
 }
 
 /* Style for the navigation header */
-.nav-header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+.nav-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Style for the navigation menu */
-.nav-menu{
-    list-style: none;
-    display: flex;
-    gap: 150px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Style for navigation menu links */
 .nav-menu li a {
-    text-decoration: none;
-    font-family: var(--font-family-cursive);
-    font-size: var(--font-size-small);
-    text-shadow: var(--text-shadow-effect);
-    color: black;
-    transition: color 1s ease;
+  text-decoration: none;
+  font-family: var(--font-family-cursive);
+  font-size: var(--font-size-small);
+  text-shadow: var(--text-shadow-effect);
+  color: black;
+  transition: color 1s ease;
 }
 
 /*Setting the color to red when the nav links are hovered over */
 .nav-menu li a:hover {
-    color: red;
+  color: red;
 }
 
 /* Media query for screens with a maximum width of 1799px */
 @media screen and (max-width: 1799px) {
-    .football-animation {
-        animation: none; 
-    }
+  .football-animation {
+    animation: none;
+  }
 
-    .hero-video h2 {
-        font-size: 2.5rem !important;
-        top: 50% !important;
-        transform: translate(0, -50%); 
-    }
+  .hero-video h2 {
+    font-size: 2.5rem !important;
+    top: 50% !important;
+    transform: translate(0, -50%);
+  }
 
-    .video-gallery{
-        grid-template-columns: repeat(2, 1fr) !important;    
-    }  
-
+  .video-gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
 /* Media query for screens with a maximum width of 1200px */
 @media screen and (max-width: 1200px) {
-    .football-animation {
-      display: none; 
-    }
+  .football-animation {
+    display: none;
+  }
 
-    .logo{
-        display: none;
-    }
+  .logo {
+    display: none;
+  }
 
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr) !important; 
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 
-    }
-    
-    .block:nth-child(n+4) {
-        height: auto; 
-        border-radius: 0 !important; 
-    }
+  .block:nth-child(n + 4) {
+    height: auto;
+    border-radius: 0 !important;
+  }
 
-    .block p {
-        font-size: 2.5rem !important; 
-    }
+  .block p {
+    font-size: 2.5rem !important;
+  }
 
-    .number-container{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+  .number-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
-    .stats h2{
-        font-size: 5rem !important;
-    }
+  .stats h2 {
+    font-size: 5rem !important;
+  }
 
-    .photo-container-career-highlights > div:not(.headings) {
-        width: calc(33.33% - 40px); 
-        flex: initial !important;
-    }
+  .photo-container-career-highlights > div:not(.headings) {
+    width: calc(33.33% - 40px);
+    flex: initial !important;
+  }
 
-    .personal-life-photo, .description{
-        height: 300px !important;
-    }
-   
-    .description p{
-        font-size: 1.5rem !important;
-        margin-top: 40px !important;
-    }
+  .personal-life-photo,
+  .description {
+    height: 300px !important;
+  }
 
-    .image-container{
-        height: 250px !important;
-        margin-top: -60px;
-    }
+  .description p {
+    font-size: 1.5rem !important;
+    margin-top: 40px !important;
+  }
+
+  .image-container {
+    height: 250px !important;
+    margin-top: -60px;
+  }
 }
 
 /* Media query for screens with a maximum width of 924px */
 @media screen and (max-width: 924px) {
-    .hero-video h2 {
-        display: none;
-    }
+  .hero-video h2 {
+    display: none;
+  }
 
-    .photo-container-career-highlights > div:not(.headings) {
-        width: calc(50% - 40px); 
-        flex: initial !important;
-    }
+  .photo-container-career-highlights > div:not(.headings) {
+    width: calc(50% - 40px);
+    flex: initial !important;
+  }
 
-    .video-gallery{
-        display: flex !important;
-        flex-direction: column !important;
-        margin: 20px !important;
-        height: auto !important;
-        width: 100% !important;
-    }
+  .video-gallery {
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 20px !important;
+    height: auto !important;
+    width: 100% !important;
+  }
 
-    .video-goals{
-        height: 400px !important;
-    }
+  .video-goals {
+    height: 400px !important;
+  }
 
-    .image-container{
-        display: none;
-    }
+  .image-container {
+    display: none;
+  }
 }
 
 /* Styling properties for the main page content */
-.main-page-content{
-    padding: 20px;
-    background-color: var(--main-site-color);
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 250px;
-    margin: 0;
+.main-page-content {
+  padding: 20px;
+  background-color: var(--main-site-color);
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 250px;
+  margin: 0;
 }
 
- /* Styling properties for the hero video section */
-.hero-video{
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    position: relative;
+/* Styling properties for the hero video section */
+.hero-video {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 /* Additional CSS styles for the hero video section */
-.hero-video video{
-    width: 100%;
-    height: auto;
-    border-radius: 250px;
-    padding: 20px;
+.hero-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 250px;
+  padding: 20px;
 }
 
 /* Adjusting the position of the control buttons in the hero video by tweaking padding */
 .hero-video video::-webkit-media-controls-panel {
-    padding: 50px;
+  padding: 50px;
 }
 
 /* Styling the text for the hero video */
-.hero-video h2{
-    width:50%;
-    height: auto;
-    position: absolute;
-    top: 40%;
-    text-align: center;
-    padding: 10px 20px;
-    font-family: var(--font-family-cursive);
-    font-size: 5rem;
-    color: white;
-    box-sizing: border-box;
+.hero-video h2 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: var(--font-family-cursive);
+  font-size: 5rem;
+  color: white;
+  box-sizing: border-box;
 }
 
- /* Styling properties for grid containers */
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin-top: 20px;
+/* Styling properties for grid containers */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 /* Styling the first three child block elments */
-.block:nth-child(-n+3){
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.3s ease-in-out;
+.block:nth-child(-n + 3) {
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Styling the images to be circular when hovered upon*/
-.block:nth-child(-n+3):hover{
-    border-radius: 50%;
+.block:nth-child(-n + 3):hover {
+  border-radius: 50%;
 }
 
 /* Setting the background image for the first block element */
-.block1{
-    background-image: var(--image-url-realmadrid);  
+.block1 {
+  background-image: var(--image-url-realmadrid);
 }
 
 /* Setting the background image for the second block element */
-.block2{
-    background-image: var(--image-url-euro2016);
+.block2 {
+  background-image: var(--image-url-euro2016);
 }
 
 /* Setting the background image for the third block element */
-.block3{
-    background-image: var(--image-url-ballondor);
+.block3 {
+  background-image: var(--image-url-ballondor);
 }
 
 /* Styling the fourth, fifth and sixth elements with the block class */
-.block:nth-child(n+4){
-    height: 300px;
-    border-radius: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #00CED1;
+.block:nth-child(n + 4) {
+  height: 300px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ced1;
 }
 
 /* Styling the text in the block class and the description class */
-.block:nth-child(n+4) p,
-.description p{
-    text-align: center; 
-    margin: 0; 
-    font-family: var(--font-family-cursive);
-    font-size: 2.8rem;
-    text-shadow: var(--text-shadow-effect);
+.block:nth-child(n + 4) p,
+.description p {
+  text-align: center;
+  margin: 0;
+  font-family: var(--font-family-cursive);
+  font-size: 2.8rem;
+  text-shadow: var(--text-shadow-effect);
 }
 
-.block:nth-child(n+4) p:hover{
-    animation: blink 2s infinite;
+.block:nth-child(n + 4) p:hover {
+  animation: blink 2s infinite;
 }
 
 /* Animation for blinking effect on text*/
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Styling properties for number containers */
- .number-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
-    margin-top: 60px;
-    gap: 20px;
-    text-align: center;
-    justify-content: center;
+.number-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin-top: 60px;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
 /* Styling the text heading in the number container */
-.number-container > h2{
-    width: 100%;
-    font-family: var(--font-family-serif);
-    font-size: var(--font-size-large);
-    margin: 0;
-    font-weight: 20;
-    color: rgb(103, 67, 18);
+.number-container > h2 {
+  width: 100%;
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-large);
+  margin: 0;
+  font-weight: 20;
+  color: rgb(103, 67, 18);
 }
 
 /* Styling properties for stats elements */
-.stats{
-    margin-top:50px;
-    height: 400px;
-    width: calc(20% - 20px);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.stats {
+  margin-top: 50px;
+  height: 400px;
+  width: calc(20% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Styling the second and the fourth div in the stats class to be a white border */
 .stats:nth-of-type(2),
-.stats:nth-of-type(4){
-    height: 2px;
-    border: 3px solid white;
+.stats:nth-of-type(4) {
+  height: 2px;
+  border: 3px solid white;
 }
 
 /* Styling properties for icons within stats elements */
-.style-icon{
-    color:#4b4a4a;
-    font-size: 10em;
+.style-icon {
+  color: #4b4a4a;
+  font-size: 10em;
 }
 
 /* Styling the h2 elements in the stats elements*/
-.stats h2{
-    font-family: var(--font-family-serif);
-    font-size: 7rem;
-    margin: 0;
-    font-weight: 20;
-    color: rgb(103, 67, 18);
+.stats h2 {
+  font-family: var(--font-family-serif);
+  font-size: 7rem;
+  margin: 0;
+  font-weight: 20;
+  color: rgb(103, 67, 18);
 }
 
 /* Styling the h4 elements in the stats elements*/
-.stats h4{
-    font-family: var(--font-family-serif);
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 20;
-    color: rgb(103, 67, 18);
-    margin-top: 20px;
+.stats h4 {
+  font-family: var(--font-family-serif);
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 20;
+  color: rgb(103, 67, 18);
+  margin-top: 20px;
 }
-   
+
 /* Styling properties for the footer container */
-.footer-container{
-    padding: 20px;
-    background-color: var(--main-site-color);
-    gap: 20px;
+.footer-container {
+  padding: 20px;
+  background-color: var(--main-site-color);
+  gap: 20px;
 }
 
 /* Styling the first div in the footer container to be a white border which seperated the footer elements from the main page */
-.footer-container > div:nth-of-type(1){
-    height:2px;
-    width: 100%;
-    border: 3px solid white;
-    background-color: white;
+.footer-container > div:nth-of-type(1) {
+  height: 2px;
+  width: 100%;
+  border: 3px solid white;
+  background-color: white;
 }
 
 /* Styling properties for footer elements */
-.footer-elements{
-    display: flex;
-    background-color: var(--main-site-color);
-    align-items: center;
-    justify-content:space-between;
-    margin-top: 20px;
-    height: 100px;
-    width: 100%;
+.footer-elements {
+  display: flex;
+  background-color: var(--main-site-color);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 100px;
+  width: 100%;
 }
 
- /* Styling properties for the copyright section */
-.copyright{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Styling properties for the copyright section */
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Styling the text in the copyright section */
-.copyright h4{
-    font-family: var(--font-family-serif);
-    font-size: 1.5rem;
-    color: black;
+.copyright h4 {
+  font-family: var(--font-family-serif);
+  font-size: 1.5rem;
+  color: black;
 }
 
 /* Styling properties for the career highlights container */
-.photo-container-career-highlights{
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.photo-container-career-highlights {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Styling properties for the elements in the container except the headings container */
-.photo-container-career-highlights > div:not(.headings){
-    margin: 20px;
-    height: 600px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex: 1;
-    position: relative;
-    transition: transform 0.3s ease;
-    overflow: hidden;
+.photo-container-career-highlights > div:not(.headings) {
+  margin: 20px;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
- /* Styling properties for headings within the career highlights section */
-.headings{
-    width: 100%;
-    height:100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    margin: 20px;
+/* Styling properties for headings within the career highlights section */
+.headings {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin: 20px;
 }
 
 /* Styling the h2 element within the headings sections */
-.headings > h2{
-    font-family: var(--font-family-serif);
-    font-size: var(--font-size-large);
-    margin: 0;
-    font-weight: 20;
-    color: rgb(103, 67, 18);
+.headings > h2 {
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-large);
+  margin: 0;
+  font-weight: 20;
+  color: rgb(103, 67, 18);
 }
 
 /* Styling properties for hover effect on career highlights */
-.photo-container-career-highlights > div:not(.headings):hover{
-    transform: scale(1.15);
+.photo-container-career-highlights > div:not(.headings):hover {
+  transform: scale(1.15);
 }
 
 /* Styling properties for career highlight captions */
-.photo-container-career-highlights > div p{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-    font-family: var(--font-family-serif);
-    font-size: 1.1rem;
-    font-style:italic;
-    font-weight: 800;
-    padding: 20px;
-    z-index: 1;
-    background-color: rgb(0,0,0,0.4);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+.photo-container-career-highlights > div p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-family: var(--font-family-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 800;
+  padding: 20px;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* Highlight captions on hover within the career highlights container */
 .photo-container-career-highlights > div:hover p {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Setting the background image for career highlights photo  */
-.photo1{
-    background-image: var(--image-url-sporting);
+.photo1 {
+  background-image: var(--image-url-sporting);
 }
 
-.photo2{
-    background-image: var(--image-url-manchester);
+.photo2 {
+  background-image: var(--image-url-manchester);
 }
 
-.photo3{
-    background-image: var(--image-url-realmadrid-fc);
+.photo3 {
+  background-image: var(--image-url-realmadrid-fc);
 }
 
-.photo4{
-    background-image: var(--image-url-juventus-fc);
+.photo4 {
+  background-image: var(--image-url-juventus-fc);
 }
 
-.photo5{
-    background-image: var(--image-url-alnassr-fc);
+.photo5 {
+  background-image: var(--image-url-alnassr-fc);
 }
 
-.photo6{
-    background-image: var(--image-url-portugal);
+.photo6 {
+  background-image: var(--image-url-portugal);
 }
 
 /* Style for the personal life photo container with a top margin */
-.photo-container-personal-life{
-    margin-top: 40px;
-    max-width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+.photo-container-personal-life {
+  margin-top: 40px;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Style for the gallery (personal life photos) */
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin: 20px;
-    height: auto;
-    width: 100%;
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+  height: auto;
+  width: 100%;
 }
 
 /* Style for the description of each personal life photo */
-.description{
-    margin: 10px;
-    position: relative;
+.description {
+  margin: 10px;
+  position: relative;
 }
 
 /* Style for paragraphs within the photo descriptions */
-.description p{
-    position: absolute;
-    margin-top: 120px;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    transition: all 0.3s ease-in-out;
-    font-size: 2.4rem;
+.description p {
+  position: absolute;
+  margin-top: 120px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  font-size: 2.4rem;
 }
 
 /* Hover effect on paragraphs in photo descriptions */
-.description p:hover{
-    background-color: teal;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-    opacity: 0.8;
-    transform: rotate(5deg);
-    border: 2px solid white;
+.description p:hover {
+  background-color: teal;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  opacity: 0.8;
+  transform: rotate(5deg);
+  border: 2px solid white;
 }
 
 /* Style for the personal life container */
-.personal-life-photo{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    height: 600px;
-    margin: 10px;
-    filter: blur(10px);
-    transition: all 0.3s ease-in-out;
+.personal-life-photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  height: 600px;
+  margin: 10px;
+  filter: blur(10px);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Removing the blur effect from the personal life photos on hover*/
-.personal-life-photo:hover{
-    filter: blur(0);
-    border: 3px solid teal;
+.personal-life-photo:hover {
+  filter: blur(0);
+  border: 3px solid teal;
 }
 
 /* Set the background image for personal life photo  */
-.photo_1{
-    background-image: var(--image-url-cr7-dad);
+.photo_1 {
+  background-image: var(--image-url-cr7-dad);
 }
 
-.photo_2{
-    background-image: var(--image-url-cr7-mom);
+.photo_2 {
+  background-image: var(--image-url-cr7-mom);
 }
 
-.photo_3{
-    background-image: var(--image-url-cr7-wife);
+.photo_3 {
+  background-image: var(--image-url-cr7-wife);
 }
 
-.photo_4{
-    background-image: var(--image-url-cr7-kids);
+.photo_4 {
+  background-image: var(--image-url-cr7-kids);
 }
 
-.photo_5{
-    background-image: var(--image-url-cr7-fitness);
+.photo_5 {
+  background-image: var(--image-url-cr7-fitness);
 }
 
 /* Style for the video container with a top margin */
-.video-container{
-    margin-top: 40px;
-    max-width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+.video-container {
+  margin-top: 40px;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Style for the video gallery */
-.video-gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 20px;
-    height: auto;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Style for individual video goals */
-.video-goals{
-    height: 300px;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 10px;
-    box-sizing: border-box;  
+.video-goals {
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 10px;
+  box-sizing: border-box;
 }
 
 /* Common styles for all image containers */
-.image-container{
-    height: 300px;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid #333;
-    opacity: 0;
-    border-radius: 100px;
+.image-container {
+  height: 300px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #333;
+  opacity: 0;
+  border-radius: 100px;
 }
 
 /* Individual image animations */
 .image-container.image1 {
-    animation: imageFadeIn 12s ease infinite;
+  animation: imageFadeIn 12s ease infinite;
 }
-  
+
 .image-container.image3 {
-    animation: imageFadeIn 12s ease infinite;
-    animation-delay: 3s;
+  animation: imageFadeIn 12s ease infinite;
+  animation-delay: 3s;
 }
-  
+
 .image-container.image7 {
-    animation: imageFadeIn 12s ease infinite;
-    animation-delay: 6s;
+  animation: imageFadeIn 12s ease infinite;
+  animation-delay: 6s;
 }
-  
+
 .image-container.image5 {
-    animation: imageFadeIn 12s ease infinite;
-    animation-delay: 9s;
+  animation: imageFadeIn 12s ease infinite;
+  animation-delay: 9s;
 }
 
 /* Keyframes animation for fading in and out */
 @keyframes imageFadeIn {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    75% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-  
+
 /* Style for video elements within video goals */
-.video-goals video{
-    width: 100%;
-    height: fit-content;
+.video-goals video {
+  width: 100%;
+  height: fit-content;
 }
