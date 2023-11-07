@@ -173,14 +173,20 @@ body{
     font-size: var(--font-size-small);
     text-shadow: var(--text-shadow-effect);
     color: black;
-    transition: color 1s ease;
+    background-color: white;
+    transition: color 1s ease-in-out;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 10px;
 }
 
-/*Setting the color to red when the nav links are hovered over */
-.nav-menu li a:hover {
-    color: red;
-}
-
+/* Define your CSS styles here, including styles for the "selected" class */
+.nav-menu li a.selected {
+    /* Add your selected item styles here */
+    background-color:black;
+    color: #fff;
+  }
+  
 /* Media query for screens with a maximum width of 1799px */
 @media screen and (max-width: 1799px) {
     .football-animation {
