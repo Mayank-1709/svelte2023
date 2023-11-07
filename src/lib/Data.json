@@ -1,14 +1,13 @@
 {
-    "blockData": [
-        "A Galáctico Unveiled: Cristiano Ronaldo's Historic Move to Real Madrid",
-        "Ronaldo's Triumph: Leading Portugal to Euro 2016 Glory",
-        "CR7's Five-Star Legacy: Ballon d'Or Dominance"
-    ],
-    
-      
-    "iconData": [
-        "fa-solid fa-futbol style-icon",
-        "fa-solid fa-trophy style-icon",
-        "fa-solid fa-award style-icon"
-    ]
+  "blockData": [
+    "A Galáctico Unveiled: Cristiano Ronaldo's Historic Move to Real Madrid",
+    "Ronaldo's Triumph: Leading Portugal to Euro 2016 Glory",
+    "CR7's Five-Star Legacy: Ballon d'Or Dominance"
+  ],
+
+  "iconData": [
+    "fa-solid fa-futbol style-icon",
+    "fa-solid fa-trophy style-icon",
+    "fa-solid fa-award style-icon"
+  ]
 }
