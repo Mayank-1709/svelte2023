@@ -281,6 +281,10 @@ body {
     height: 250px !important;
     margin-top: -60px;
   }
+
+  .nav-menu li a {
+    font-size: 1.5rem !important;
+  }
 }
 
 /* Media query for screens with a maximum width of 924px */
