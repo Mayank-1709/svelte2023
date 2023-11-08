@@ -2,10 +2,12 @@
   import statsData from "../lib/Statsdata.json";
   import { blockData } from "../lib/Data.json";
   import { iconData } from "../lib/Data.json";
+  import DropdownMenu from "../lib/DropdownMenu.svelte";
 </script>
 
 <!-- The main content of the webpage -->
 <div class="main-page-content">
+  <DropdownMenu />
   <!-- Hero video section -->
   <div class="hero-video">
     <video controls autoplay muted loop poster="../images/poster-image.jpg">

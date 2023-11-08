@@ -802,3 +802,24 @@ body {
   width: 100%;
   height: fit-content;
 }
+
+#pageSelector{
+  margin-top: 40px;
+  position: fixed;
+  top: 250px;
+  right: -30px;
+  border-radius: 100px;
+  rotate: 90deg;
+  padding: 10px;
+  font-size: 1rem;
+  appearance: none;
+  z-index: 1;
+  background-color: var(--main-site-color);
+  text-align: center;
+}
+
+#pageSelector:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

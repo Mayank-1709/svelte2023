@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import careerData from "../../lib/Careerdata.json";
   import familyMembers from "../../lib/Familymembers.json";
+  import DropdownMenu from "../../lib/DropdownMenu.svelte";
 
   let urls = [];
   const BASE_URL = `https://api.unsplash.com`;
@@ -63,6 +64,8 @@
 
 <!-- The main content of the webpage -->
 <div class="main-page-content">
+
+  <DropdownMenu />
   <!-- Career highlights section -->
   <div class="photo-container-career-highlights">
     <div class="headings">

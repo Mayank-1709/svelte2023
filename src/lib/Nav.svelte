@@ -1,6 +1,6 @@
 <script>
     let selectedNavItem = "Home";
-  
+
     function selectNavItem(item) {
       selectedNavItem = item;
     }
