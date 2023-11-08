@@ -282,6 +282,10 @@ body {
     margin-top: -60px;
   }
 
+  .nav-menu{
+    gap: 100px !important;
+  }
+
   .nav-menu li a {
     font-size: 1.5rem !important;
   }
