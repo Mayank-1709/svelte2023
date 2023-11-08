@@ -50,6 +50,10 @@ For future enhancements, I plan to introduce several exciting additions to my we
 
 - **Enhanced Interactivity**: Incorporate interactive elements and cool animations to make the website more engaging and visually appealing.
 
+## Known Bugs
+- When a user navigates to a page, the corresponding navigation item in the navbar is highlighted to indicate the current page. However, if the user refreshes the page, the page's location remains the same, yet the home icon in the navbar is highlighted instead.
+- Additionally, there is a dropdown button labeled **CLICK ME** on the right side of the page, serving as navigation links to various pages. When a user scrolls down, and the header is not visible, the links in the dropdown work as expected. However, the related navigation item in the header is not highlighted to reflect the active page.
+
 ## Screenshots
 Here are some screenshots of my website:
 ![Screenshot_1](/static/images/Screenshot_1.png)
