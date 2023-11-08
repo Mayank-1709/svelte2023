@@ -151,18 +151,6 @@ body {
   }
 }
 
-/* Style for the fixed header, fixing the position of the header on top of the page while scrolling the page */
-#fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1;
-  box-sizing: border-box;
-  margin: 0;
-}
-
 /* Style for the sub-main header element */
 .sub-main-header {
   width: 100%;
@@ -325,8 +313,9 @@ body {
   background-color: var(--main-site-color);
   box-sizing: border-box;
   width: 100%;
-  padding-top: 250px;
+  padding-top: 100px;
   margin: 0;
+  position: relative;
 }
 
 /* Styling properties for the hero video section */
@@ -578,7 +567,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  margin: 20px;
 }
 
 /* Styling the h2 element within the headings sections */
